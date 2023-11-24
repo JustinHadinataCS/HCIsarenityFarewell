@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "sans-serif";
+
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('https://media.discordapp.net/attachments/1159701745044299888/1164846736964079647/closeup-shot-person-hand-casket-with-blurred-background.jpg?ex=6544b30f&is=65323e0f&hm=4fa8e7fd7d2f43ae6e9565953b9da68d9ac9f8f363eda430caf68991ec603aff&=&width=738&height=492');
+  background-size: cover;
+  background-position: center;
+}
+.navbar{
+  height: 30px;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fbfaf9;
+}
+.logo{
+  width: 120px;
+  cursor: pointer;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px; 
+  position: relative;
+
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.navbar ul li::after{
+  content: '';
+  height: 2px;
+  width: 0;
+  background: black;
+  position: absolute;
+  left: 0%;
+  bottom: -10;
+  transition: 0.6s;
+}
+.navbar ul li:hover:after{
+  width: 100%;
+}
