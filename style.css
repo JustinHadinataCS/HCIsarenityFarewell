@@ -4,6 +4,15 @@
   font-family: 'Inter', sans-serif;
 
 }
+::selection{
+  color: black;
+  background-color: orange
+}
+paragraph::selection{
+  color: red;
+  background-color: black;
+}
+
 :root{
   --font-text: 'Inter', sans-serif;
   --font-button: 'Roboto', sans-serif;
@@ -72,7 +81,7 @@ body {
 }
 
 .header{
-  margin-top: 100px;
+  margin-top: 150px;
   margin-bottom: 50px;
   font-family: var(--font-family);
   color: var(--color-gray);
