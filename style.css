@@ -9,8 +9,8 @@
   background-color: orange
 }
 paragraph::selection{
-  color: red;
-  background-color: black;
+  color: black;
+  background-color: orange
 }
 
 :root{
