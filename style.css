@@ -21,7 +21,6 @@ paragraph::selection{
   --color-white: rgb(229, 229, 229);
 
 body {
-
   background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('Images/candle2.jpg');
   background-size: cover;
   background-position: center;
