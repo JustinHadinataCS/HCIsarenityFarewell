@@ -1,156 +1,99 @@
 *{
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
 
 }
+
 ::selection{
-  color: black;
-  background-color: orange
+    color: black;
+    background-color: orange
 }
+
 paragraph::selection{
-  color: black;
-  background-color: orange
+    color: black;
+    background-color: orange
 }
 
 :root{
-  --font-text: 'Inter', sans-serif;
-  --font-button: 'Roboto', sans-serif;
+    --font-text: 'Inter', sans-serif;
+    --font-button: 'Roboto', sans-serif;
 
-  --color-gray: rgb(118, 118, 118);
-  --color-white: rgb(229, 229, 229);
-
-body {
-  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('Images/candle2.jpg');
-  background-size: cover;
-  background-position: center;
-  color: white;
+    --color-gray: rgb(118, 118, 118);
+    --color-white: rgb(229, 229, 229);
 }
 
-.card{
-  background-repeat: no-repeat; 
-}
-.card-body{
-  background-repeat: no-repeat; 
-}
-
-}
 .banner{
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('Images/candle2.jpg');
-  background-size: cover;
-  background-position: center;
-  color: white;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('Images/candle2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
+
 .logo{
-  width: 120px;
-  cursor: pointer;
+    width: 120px;
+    cursor: pointer;
 }
 
 .navbar ul li{
-  list-style: none;
-  display: inline-block;
-  margin: 0 5px; 
-  position: relative;
-  font-family: var(--font-text);
-
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px; 
+    position: relative;
+    font-family: var(--font-text);
 
 }
 
 .navbar ul li a{
-  text-decoration: none;
-  text-transform: uppercase;
-
+    text-decoration: none;
+    text-transform: uppercase;
 }
+
 .navbar ul li::after{
-  content: '';
-  height: 2px;
-  width: 0;
-  background: rgb(118, 118, 118);
-  position: absolute;
-  left: 0%;
-  bottom: -5;
-  transition: 0.7s;
+    content: '';
+    height: 2px;
+    width: 0;
+    background: rgb(118, 118, 118);
+    position: absolute;
+    left: 0%;
+    bottom: -5;
+    transition: 0.7s;
 }
+
 .navbar ul li:hover:after{
-  width: 100%;
+    width: 100%;
 }
+
 @keyframes slideUp {
-  from{
-    transform: translateY(30px);
-  }
-  to{
-    transform: translateY(0);
-  }
-}
-
-.header{
-  margin-top: 150px;
-  margin-bottom: 50px;
-  font-family: var(--font-family);
-  color: var(--color-gray);
-  animation: slideUp 0.5s linear  1 normal;
-  font-size: 45px;
-  transition: color 0.4s, font-size 0.2s;
-}
-
-.header:hover{
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-  font-size: 50px;
-}
-
-
-.paragraph{
-  color: var(--color-white);
-  font-family: var(--font-family);
-  animation: slideUp 0.3s linear   1 normal;
-}
-
-.noBorder{
-  border: none;
-}
-
-.homeButton{
-  background-color: transparent;
-  color: var(--color-white);
-  margin: 0px 30px;
-  padding: 0.5em 1em;
-  font-weight: 90;
-  font-size: 1rem;
-  font-family: var(--font-text);
-  border-radius: 5px;
-  border: 0.3px solid var(--color-white) ;
-  animation: slideUp 0.3s linear   1 normal;
-  transition: all 0.3s;
-}
-.homeButton:hover{
-  transform: translateY(-10px);
-  color: black;
-  font-weight: 200;
-  background-color: var(--color-white);
+    from{
+      transform: translateY(30px);
+    }
+    to{
+      transform: translateY(0);
+    }
 }
 
 .toggleButton{
-  background-color: transparent;
-  border: none;
+    background-color: transparent;
+    border: none;
 }
 
 .toggleButton:click{
-  background-color: transparent;
-  border: none;
+    background-color: transparent;
+    border: none;
 }
 
 .bi-toggle-off{
-  transition: color 0.4s, font-size 0.2s;
-  font-size: 3em;
-}
-.bi-toggle-off:hover{
-  font-size: 3.2em;
+    transition: color 0.4s, font-size 0.2s;
+    font-size: 3em;
 }
 
+.bi-toggle-off:hover{
+    font-size: 3.2em;
+}
 
 .CallMeAnAnimation{
-  animation: slideUp 0.3s linear   1 normal;
+    animation: slideUp 0.3s linear   1 normal;
 }

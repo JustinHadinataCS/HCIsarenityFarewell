@@ -1,0 +1,46 @@
+.header{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-family: var(--font-family);
+    color: var(--color-gray);
+    animation: slideUp 0.5s linear  1 normal;
+    font-size: 45px;
+    transition: color 0.4s, font-size 0.2s;
+}
+
+.header:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.paragraph{
+    color: var(--color-white);
+    font-family: var(--font-family);
+    animation: slideUp 0.3s linear   1 normal;
+}
+
+.noBorder{
+    border: none;
+}
+
+.homeButton{
+    background-color: transparent;
+    color: var(--color-white);
+    margin: 0px 30px;
+    padding: 0.5em 1em;
+    font-weight: 90;
+    font-size: 1rem;
+    font-family: var(--font-text);
+    border-radius: 5px;
+    border: 0.3px solid var(--color-white) ;
+    animation: slideUp 0.3s linear   1 normal;
+    transition: all 0.3s;
+    
+}
+.homeButton:hover{
+    transform: translateY(-10px);
+    color: black;
+    font-weight: 200;
+    background-color: var(--color-white);
+}
