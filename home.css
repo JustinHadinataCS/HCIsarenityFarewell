@@ -1,6 +1,13 @@
+@import url('https://fonts.cdnfonts.com/css/graublau-web');
 
-/* For index.html*/
 
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: gray !important;
+
+}
 .header{
     margin-top: 150px;
     margin-bottom: 50px;
@@ -9,22 +16,26 @@
     animation: slideUp 0.5s linear  1 normal;
     font-size: 45px;
     transition: color 0.4s, font-size 0.2s;
+
 }
 
 .header:hover{
     color: rgb(255, 255, 255);
     cursor: pointer;
     font-size: 50px;
+
 }
 
 .paragraph{
     color: var(--color-white);
     font-family: var(--font-family);
     animation: slideUp 0.3s linear   1 normal;
+
 }
 
 .noBorder{
     border: none;
+
 }
 
 .homeButton{
@@ -47,3 +58,140 @@
     font-weight: 200;
     background-color: var(--color-white);
 }
+
+.market-container{
+    display: flex;
+    height: 500px;
+
+}
+
+.text-right{
+    height: 100%;
+    width: 65%;
+    padding: 10px 30px;
+    background-color: rgb(255, 255, 255);
+
+    
+
+}
+
+.text-left{
+    height: 100%;
+    width: 60%;
+    padding: 10px 30px;
+    background-color: rgb(255, 255, 255);
+
+    
+
+}
+h1{
+    text-align: center;
+}
+.image-right{
+    height: 100%;
+    width: 35%;
+    background: url('AnImages/AboutUs.jpg'); 
+    background-size: cover;
+
+    
+}
+.image-left{
+    height: 100%;
+    width: 40%;
+    background: url('AnImages/OurVision.jpg'); 
+    background-size: cover;
+
+    
+}
+
+@media (max-width: 1000px) {
+    .image-right, .text-right, .image-left,.text-left {
+      width: 100%;
+
+    }
+
+    .market-container{
+        height: 1000px;
+        width: 100%;
+        flex-direction: column;
+
+    }
+  }
+  
+
+.space-container{
+    background-color: rgb(35, 35, 35);
+    height: 75px;
+    width: 100%;
+
+}
+
+.author-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.author-card{
+    border-radius: 8px;
+    width: 20%;
+    height: 450px;
+    background-color: white;
+
+}
+
+
+.author-image{
+    border-bottom: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+}
+
+#justin{
+    background-image: url('AnImages/test.jpg');
+}
+#fadillah{
+    background-image: url('AnImages/test.jpg');
+}
+#chris{
+    background-image: url('AnImages/test.jpg');
+}
+
+.author-text{
+    width: 100%;
+    height: 20%;
+
+
+}
+
+@media (max-width: 1000px) {
+    .image-right, .text-right, .image-left,.text-left, .author-image {
+      width: 100%;
+    }
+
+    .market-container{
+        height: 1000px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .author-card{
+        width: 100%;
+ 
+    }
+    .author-container{
+        width: 100%;
+        flex-direction: column;
+    }
+  }
+
+  .strong-text{
+    font-family: 'Graublau Web', sans-serif;
+    font-weight:bold; 
+    font-size: 3em;
+}
+  

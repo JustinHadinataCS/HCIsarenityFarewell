@@ -1,5 +1,5 @@
 
-/* For market.html */
+@import url('https://fonts.cdnfonts.com/css/graublau-web');
 
 :root{
     --font-text: 'Inter', sans-serif;
@@ -9,10 +9,7 @@
     --color-white: rgb(229, 229, 229);
 
     body {
-        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('Images/candle2.jpg');
-        background-size: cover;
-        background-position: center;
-        color: white;
+        background-color: black;
     }
 
     .card{
@@ -21,6 +18,10 @@
     .card-body{
         background-repeat: no-repeat; 
     }
+}
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .header{
@@ -91,3 +92,48 @@
 .CallMeAnAnimation{
     animation: slideUp 0.3s linear   1 normal;
 }
+
+.market-container{
+    display: flex;
+    height: 300px;
+}
+.text{
+    height: 100%;
+    width: 65%;
+    background-color: wheat;
+    padding: 10px;
+
+}
+
+.image{
+    height: 100%;
+    width: 35%;
+    background: url('AnImages/MarketBackground.jpg'); 
+    background-size: cover;
+
+}
+
+
+@media (max-width: 600px) {
+    .image, .text {
+      width: 100%;
+    }
+    .image{
+        height: 40%;
+    }
+    .text{
+        height: 60%;
+    }
+    .market-container{
+        height: 800px;
+        flex-direction: column;
+    }
+  }
+
+.strong-text{
+    font-family: 'Graublau Web', sans-serif;
+    font-weight:bold; 
+    font-size: 3em;
+}
+  
+
