@@ -181,11 +181,13 @@ h1{
 
     .author-card{
         width: 100%;
+        overflow: auto;
  
     }
     .author-container{
         width: 100%;
         flex-direction: column;
+        overflow: auto;
     }
   }
 
