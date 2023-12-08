@@ -173,31 +173,6 @@ h1{
 
 }
 
-<<<<<<< Updated upstream
-@media (max-width: 1000px) {
-    .image-right, .text-right, .image-left,.text-left, .author-image {
-      width: 100%;
-    }
-
-    .market-container{
-        height: 1000px;
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .author-card{
-        width: 100%;
-        overflow: auto;
- 
-    }
-    .author-container{
-        width: 100%;
-        flex-direction: column;
-        overflow: auto;
-    }
-  }
-=======
->>>>>>> Stashed changes
 
   .strong-text{
     font-family: 'Graublau Web', sans-serif;
