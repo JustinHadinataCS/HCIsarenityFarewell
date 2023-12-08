@@ -64,6 +64,11 @@ body{
     height: 500px;
 
 }
+.market-container-x{
+    display: flex;
+    height: 500px;
+
+}
 
 .text-right{
     height: 100%;
@@ -168,6 +173,7 @@ h1{
 
 }
 
+<<<<<<< Updated upstream
 @media (max-width: 1000px) {
     .image-right, .text-right, .image-left,.text-left, .author-image {
       width: 100%;
@@ -190,10 +196,108 @@ h1{
         overflow: auto;
     }
   }
+=======
+>>>>>>> Stashed changes
 
   .strong-text{
     font-family: 'Graublau Web', sans-serif;
     font-weight:bold; 
     font-size: 3em;
 }
-  
+
+
+
+.pricing-card{
+    border-radius: 8px;
+    width: 25%;
+    height: 600px;
+    background-color: white;
+}
+
+
+.pricing-main{
+    border-bottom: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Gra';
+}
+
+.pricing-header{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-family: 'Graublau Web' !important;
+    color: rgb(255, 255, 255);
+    font-size: 2.3em;
+    padding: 5px 15px;
+    height: 10%;
+    background-color: rgb(78, 78, 78);
+
+}
+
+#free{
+    background: black;}
+#premium{
+    background: black;}
+#deluxe{
+    background: black;}
+    @media (max-width: 1000px) {
+        .image-right, .text-right, .image-left,.text-left, .author-image {
+          width: 100%;
+          overflow: hidden;
+    
+        }
+        .market-container-x{
+            height: 600px;
+            width: 100%;
+            flex-direction: column;
+        }
+        .market-container{
+            height: 1000px;
+            width: 100%;
+            flex-direction: column;
+        }
+        .image-right{
+            width: 100%;
+            background-image: url('AnImages/AboutUs3.jpg');
+            overflow: hidden;
+        }
+        .image-left{
+            width: 100%;
+            background-image: url('AnImages/OurVision3.jpg');
+            overflow: hidden;
+        }
+    
+        .author-card{
+            width: 80%;
+            margin: auto;
+            overflow: auto;
+            
+        }
+        .author-container{
+            width: 100%;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .pricing-card{
+            width: 80%;
+            margin: auto;
+            height: 750px;
+            overflow: hidden;
+
+        }
+
+    }
+
+    .mainTitle{
+        font-family: 'Graublau Web';
+        font-size: 2.3em;
+        text-align: center;
+        margin: 20px 0px;
+        color: white;
+    }
+
+    #pricing{
+        background-color: black;
+    }
