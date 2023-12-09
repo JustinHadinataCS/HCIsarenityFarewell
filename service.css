@@ -1,6 +1,11 @@
 
 /* For service.html */
 
+body {
+    background-color: rgb(22, 22, 22) !important;
+}
+
+/*Resizing the candle image and changing text content*/
 #bannerService {
     width: 100%;
     height: 50vh;
@@ -10,10 +15,12 @@
     color: white;
 }
 
+/*Shifting the heading and subheading text position downwards*/
 .heading {
     margin-top: 10vh;
 }
 
+/*Set space between heading and subheading*/
 #subheading {
     font-size: 30px;
     width: 50%;
@@ -22,33 +29,35 @@
     margin-top: 5vh;
 }
 
+/*Resizing and setting the background colour for the circles section*/
+#serviceSection {
+    background-color: white;
+    padding-bottom: 5vw;
+    padding-top: 2vw;
+}
+
+/*Set space between circle section and candle image*/
 .circleSection {
     margin-top: 10vh;
 }
 
+/*Set space between first and second rows of circle section*/
 .circleRow2 {
     margin-top:  15vh;
 }
 
+/*Resizing button text in circles*/
 .circleText {
     font-size: 2vw;
     color: white;
-    filter: brightness(50)
 }
 
+/*Reducing the space between the first and second lines of each button text*/
 .circleTextLine2 {
     margin-top: -15px;
 }
 
-.circleSize {
-    width: 15vw;
-    height: 15vw;
-    margin-left: 10%;
-    border-radius: 100%;
-    background-size: cover;
-    border: none;
-}
-
+/*Giving each circle the respective background images and make them appear more subtle*/
 #circle1 {
     background-image: linear-gradient(rgba(85, 85, 85, 0.75),rgba(66, 66, 66, 0.75)), url("serviceImages/funeralMusic.jpg");
 }
@@ -67,4 +76,102 @@
 
 #circle5 {
     background-image: linear-gradient(rgba(85, 85, 85, 0.438),rgba(66, 66, 66, 0.445)), url("serviceImages/funeralComplete.jpeg");
+}
+
+/*Set the circle size and improve background image appearance*/
+.circleSize {
+    width: 15vw;
+    height: 15vw;
+    margin-left: 10%;
+    border-radius: 100%;
+    background-size: cover;
+    border: none;
+}
+
+/*Giving each rectangle the respective background images and decreasing the brightness of each image*/
+#musicPart {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("serviceImages/musicPart.jpg");
+}
+
+#ministerPart {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("serviceImages/ministerPart.jpeg");
+}
+
+#morticianPart {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("serviceImages/morticianPart.jpg");
+}
+
+#gravestonePart {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("serviceImages/gravestonePart.png");
+}
+
+#funeralPart {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("serviceImages/funeralPart.jpg");
+}
+
+/*Set the rectangle size and improve background image appearance*/
+.services {
+    background-size: cover;
+    height: 30vw;
+    margin-top: 15vh;
+}
+
+/*Set space for each service description*/
+.whiteArea {
+    width: 35vw;
+    height: 30vw;
+    background-color: white;
+}
+
+/*To decide the location of the service description*/
+.left {
+    margin-left: 10%;
+}
+
+.right {
+    margin-left: 54%;
+}
+
+/*Make a clickable button, set the colour, set the shape, and change font size*/
+.button {
+    background-color: black;
+    margin-top: -10vw;
+    border-radius: 100vw;
+    padding: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: white;
+    font-size: 2vw;
+}
+
+/*To place the button over the background image of each service and decide the location*/
+.leftButton {
+    float: left;
+    margin-left: 20vw;
+}
+
+.rightButton {
+    float: right;
+    margin-right: 18vw;
+}
+
+/*Shift the subheading of each service towards the top center with space above the subheading and change font size*/
+.subheadingServices {
+    text-align: center;
+    padding-top: 3vw;
+    font-size: 1.8vw;
+}
+
+.descriptionServices {
+    text-align: justify;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vw;
+    font-size: 1.02vw;
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        display: none;
+    }
 }
