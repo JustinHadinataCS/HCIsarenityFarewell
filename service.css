@@ -13,3 +13,58 @@
 .heading {
     margin-top: 10vh;
 }
+
+#subheading {
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
+    height: 5vh;
+    margin-top: 5vh;
+}
+
+.circleSection {
+    margin-top: 10vh;
+}
+
+.circleRow2 {
+    margin-top:  15vh;
+}
+
+.circleText {
+    font-size: 2vw;
+    color: white;
+    filter: brightness(50)
+}
+
+.circleTextLine2 {
+    margin-top: -15px;
+}
+
+.circleSize {
+    width: 15vw;
+    height: 15vw;
+    margin-left: 10%;
+    border-radius: 100%;
+    background-size: cover;
+    border: none;
+}
+
+#circle1 {
+    background-image: linear-gradient(rgba(85, 85, 85, 0.75),rgba(66, 66, 66, 0.75)), url("serviceImages/funeralMusic.jpg");
+}
+
+#circle2 {
+    background-image: linear-gradient(rgba(44, 44, 44, 0.247),rgba(0, 0, 0, 0.308)), url("serviceImages/funeralMinister.jpg");
+}
+
+#circle3 {
+    background-image: linear-gradient(rgba(85, 85, 85, 0.623),rgba(66, 66, 66, 0.534)), url("serviceImages/funeralMortician.jpg");
+}
+
+#circle4 {
+    background-image: linear-gradient(rgba(85, 85, 85, 0.75),rgba(66, 66, 66, 0.75)), url("serviceImages/funeralGravestone.jpg");
+}
+
+#circle5 {
+    background-image: linear-gradient(rgba(85, 85, 85, 0.438),rgba(66, 66, 66, 0.445)), url("serviceImages/funeralComplete.jpeg");
+}
