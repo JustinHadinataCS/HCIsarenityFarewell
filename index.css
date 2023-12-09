@@ -12,17 +12,10 @@ body{
     margin-top: 150px;
     margin-bottom: 50px;
     font-family: var(--font-family);
-    color: var(--color-gray);
-    animation: slideUp 0.5s linear  1 normal;
-    font-size: 45px;
-    transition: color 0.4s, font-size 0.2s;
-
-}
-
-.header:hover{
     color: rgb(255, 255, 255);
-    cursor: pointer;
+    animation: slideUp 0.5s linear  1 normal;
     font-size: 50px;
+    transition: color 0.4s, font-size 0.2s;
 
 }
 
@@ -91,6 +84,14 @@ body{
 }
 h1{
     text-align: center;
+}
+.subheading{
+    font-size: 40px;
+}
+.content{
+    font-size: 20px;
+    text-align: center;
+
 }
 .image-right{
     height: 100%;
