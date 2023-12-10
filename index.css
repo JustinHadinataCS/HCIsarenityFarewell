@@ -391,3 +391,7 @@ h1{
 .startRight {
     float: right;
 }
+
+.toggleButton:hover{
+    color: orange;
+}
