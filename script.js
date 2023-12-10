@@ -5,9 +5,9 @@ const logInButton = document.querySelector('#logInButton');
 
 
 signUpButton.addEventListener('click', function () {
-    location.assign("https://justinhadinatacs.github.io/HCIsarenityFarewell/login.html");
+    location.href("https://justinhadinatacs.github.io/HCIsarenityFarewell/login.html");
 });
 
 logInButton.addEventListener('click', function () {
-    location.assign("https://justinhadinatacs.github.io/HCIsarenityFarewell/login.html);
+    location("https://justinhadinatacs.github.io/HCIsarenityFarewell/login.html");
 });
