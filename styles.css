@@ -109,3 +109,18 @@ paragraph::selection{
 .CallMeAnAnimation{
     animation: slideUp 0.3s linear   1 normal;
 }
+
+/* Toggle Button Color Mode*/
+
+:root{
+    --solarized-bg-color: #fcde9c;
+    --solarized-text-color: #ffa552;
+    --solarized-box-color: #5C4742;
+}
+
+
+.solarized{
+    
+    background-color: var(--solarized-bg-color);
+    color: var(--solarized-text-color);
+}
