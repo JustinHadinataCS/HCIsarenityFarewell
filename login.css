@@ -120,8 +120,6 @@ body{
 
 
 .main-container .btn:hover{
-    transform: translateY(-20px);
-    margin-top: 7px;
     background-color: orange;
     color: black
 

@@ -63,6 +63,25 @@ body{
 
 }
 
+.planning-container{
+    display: flex;
+    height: 650px;
+}
+
+.planning-left{
+    height: 100%;
+    width: 50%;
+    padding: 10px 30px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.planning-right{
+    height: 100%;
+    width: 50%;
+    background: url('AnImages/ImageTest.jpg'); 
+    background-size: cover;
+}
 .text-right{
     height: 100%;
     width: 65%;
@@ -203,23 +222,23 @@ h1{
     width: 100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    font-family: 'Graublau Web' !important;
+    font-weight: 100 !important;
     color: rgb(255, 255, 255);
     font-size: 2.3em;
     padding: 5px 15px;
     height: 10%;
-    background-color: rgb(78, 78, 78);
+    background-color: rgb(23, 23, 23);
 
 }
 
 #free{
-    background: black;}
+    background: rgb(0, 0, 0);}
 #premium{
     background: black;}
 #deluxe{
     background: black;}
     @media (max-width: 1000px) {
-        .image-right, .text-right, .image-left,.text-left, .author-image {
+        .image-right, .text-right, .image-left,.text-left, .author-image, .planning-left,.planning-right {
           width: 100%;
           overflow: hidden;
     
@@ -227,6 +246,10 @@ h1{
         .market-container-x{
             height: 600px;
             width: 100%;
+            flex-direction: column;
+        }
+        .planning-container{
+            height: 1000px;
             flex-direction: column;
         }
         .market-container{
