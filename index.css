@@ -5,20 +5,28 @@
     --white3: #E2DCDE;
     --white4: #b97375;
     --white5: #2D2D34;
+    --white6: #FFE548;
+    --white7: #582707;
+    --white8: #CEB5B7;
     --black1: #E9FFF9;
     --black2: #1D3354;
     --black3: #090C02;
     --black4: #FFFFFA;
     --black5: #BDD4E7;
 
-
-
 }
 
 .light{
-    --bg: var(--white1);
+    --bg: var(--white8);
     --bg-nav: var(--white2);
-    --text: var(var(--white5))
+    --text: var(var(--white5));
+    --firstcontainer-background: var(--white2);
+    --firstcontainer-text: var(--white5);
+    --pricing-bg: var(--white8);  
+    --team-text-background: var(--white1);
+    --team-text-text: var(--white5);
+    --meetourTime-line: var(var(--white4))
+
 }
 
 .dark{
@@ -28,6 +36,10 @@
     --firstcontainer-background: var(--black3);
     --firstcontainer-text: var(--black4);
     --pricing-bg: var(--black5);  
+    --team-text-background: var(--black3);
+    --team-text-text: var(--black1);
+    --meetourTime-line: var(--black2)
+
 }
 
 .market-container{
@@ -202,8 +214,8 @@ h1{
 .author-card{
     width: 20%;
     height: 300px;
-    background-color: var(--black3);
-    color: var(--black4);
+    background-color: var(--team-text-background);
+    color: var(--team-text-text);
 }
 
 
@@ -337,7 +349,7 @@ h1{
         text-align: left;
         padding-left: 20px;
         padding-top: 10px;
-        color: #1D3354;
+        color: var(--meetourTime-line);
         background-color: var(--pricing-bg);
         border-bottom: 1.6px solid var(--black2);
     }
@@ -484,7 +496,7 @@ h1{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #000000;
+    background-color: #fffa98;
     border: 1px solid white;
     -webkit-transition: .4s;
     transition: .4s;
@@ -503,7 +515,8 @@ h1{
   }
   
   input:checked + .slider10 {
-    background-color: #fffa98;
+    background-color: #000000;
+
   }
   
   input:focus + .slider10 {
