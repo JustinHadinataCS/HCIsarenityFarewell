@@ -1,5 +1,14 @@
 @import url('https://fonts.cdnfonts.com/css/graublau-web');
 :root{
+    --font-text: 'Inter', sans-serif;
+    --font-button: 'Roboto', sans-serif;
+
+    --color-gray: rgb(118, 118, 118);
+    --color-white: rgb(229, 229, 229);
+}
+
+
+:root{
     --white1: #F1E4E8;
     --white2: #E2DCDE;
     --white3: #E2DCDE;
@@ -13,7 +22,60 @@
     --black3: #090C02;
     --black4: #FFFFFA;
     --black5: #BDD4E7;
+    --black-linearGradient: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('AnImages/candle2.jpg');
+    --white-linearGradient: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('AnImages/WhiteCandle.jpg');
 
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: var(--HomeBackground);
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px; 
+    position: relative;
+    font-family: var(--font-text);
+
+
+}
+
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: rgb(118, 118, 118);
+    position: absolute;
+    left: 0%;
+    bottom: -5;
+    transition: 0.7s;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
 }
 
 .light{
@@ -25,7 +87,8 @@
     --pricing-bg: var(--white8);  
     --team-text-background: var(--white1);
     --team-text-text: var(--white5);
-    --meetourTime-line: var(var(--white4))
+    --meetourTime-line: var(--white4);
+    --HomeBackground: var(--white-linearGradient);
 
 }
 
@@ -38,7 +101,9 @@
     --pricing-bg: var(--black5);  
     --team-text-background: var(--black3);
     --team-text-text: var(--black1);
-    --meetourTime-line: var(--black2)
+    --meetourTime-line: var(--black2);
+    --HomeBackground: var(--black-linearGradient);
+
 
 }
 
@@ -57,9 +122,6 @@
 
 
 }
-
-
-
 body{
     margin: 0;
     padding: 0;
@@ -496,7 +558,7 @@ h1{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fffa98;
+    background-color: #000000;
     border: 1px solid white;
     -webkit-transition: .4s;
     transition: .4s;
@@ -515,12 +577,12 @@ h1{
   }
   
   input:checked + .slider10 {
-    background-color: #000000;
+    background-color: #CEB5B7;
 
   }
   
   input:focus + .slider10 {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #ffffff;
   }
   
   input:checked + .slider10:before {
@@ -536,4 +598,4 @@ h1{
   .slider10.round10:before {
     border-radius: 50%;
   }
-  
+ 

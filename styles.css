@@ -27,57 +27,7 @@ paragraph::selection{
     --color-white: rgb(229, 229, 229);
 }
 
-.banner{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('AnImages/candle2.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
 
-}
-
-.logo{
-    width: 120px;
-    cursor: pointer;
-
-}
-
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 5px; 
-    position: relative;
-    font-family: var(--font-text);
-
-
-}
-
-
-.navbar a{
-    text-decoration: none;
-    color: white;
-}
-
-.navbar ul li a{
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.navbar ul li::after{
-    content: '';
-    height: 2px;
-    width: 0;
-    background: rgb(118, 118, 118);
-    position: absolute;
-    left: 0%;
-    bottom: -5;
-    transition: 0.7s;
-}
-
-.navbar ul li:hover:after{
-    width: 100%;
-}
 
 @keyframes slideUp {
     from{
@@ -111,17 +61,3 @@ paragraph::selection{
     animation: slideUp 0.3s linear   1 normal;
 }
 
-/* Toggle Button Color Mode*/
-
-:root{
-    --solarized-bg-color: #fcde9c;
-    --solarized-text-color: #ffa552;
-    --solarized-box-color: #5C4742;
-}
-
-
-.solarized{
-    
-    background-color: var(--solarized-bg-color);
-    color: var(--solarized-text-color);
-}
