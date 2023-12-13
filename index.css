@@ -22,61 +22,12 @@
     --black3: #090C02;
     --black4: #FFFFFA;
     --black5: #BDD4E7;
+    --black6: #0D1317;
     --black-linearGradient: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('AnImages/candle2.jpg');
-    --white-linearGradient: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('AnImages/WhiteCandle.jpg');
-
-}
-.banner{
-    width: 100%;
-    height: 100vh;
-    background-image: var(--HomeBackground);
-    background-size: cover;
-    background-position: center;
-    color: white;
+    --white-linearGradient: linear-gradient(rgba(0,0,0,0.43),rgba(0,0,0,0.75)),url('AnImages/WhiteCandle.jpg');
 
 }
 
-.logo{
-    width: 120px;
-    cursor: pointer;
-
-}
-
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 5px; 
-    position: relative;
-    font-family: var(--font-text);
-
-
-}
-
-
-.navbar a{
-    text-decoration: none;
-    color: white;
-}
-
-.navbar ul li a{
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.navbar ul li::after{
-    content: '';
-    height: 2px;
-    width: 0;
-    background: rgb(118, 118, 118);
-    position: absolute;
-    left: 0%;
-    bottom: -5;
-    transition: 0.7s;
-}
-
-.navbar ul li:hover:after{
-    width: 100%;
-}
 
 .light{
     --bg: var(--white8);
@@ -126,6 +77,9 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+    background-color: black !important;
+
 
 }
 .header{
@@ -175,7 +129,7 @@ body{
 
 .planning-container{
     display: flex;
-    height: 650px;
+    height: 500px;
 }
 
 .planning-left{
@@ -404,6 +358,9 @@ h1{
 
         }
 
+        .banner{
+            height: 100%;
+        }
     }
 
     .mainTitle{
@@ -598,4 +555,54 @@ h1{
   .slider10.round10:before {
     border-radius: 50%;
   }
- 
+  .banner{
+    width: 100%;
+    height: 100vh;
+    background-image: var(--HomeBackground);
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px; 
+    position: relative;
+    font-family: var(--font-text);
+
+
+}
+
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: rgb(118, 118, 118);
+    position: absolute;
+    left: 0%;
+    bottom: -5;
+    transition: 0.7s;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+}
