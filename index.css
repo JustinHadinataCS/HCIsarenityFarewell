@@ -106,7 +106,7 @@ body{
 
 .planning-left{
     height: 100%;
-    width: 50%;
+    width: 54%;
     padding: 10px 30px;
     background-color: var(--firstcontainer-background);
     color: var(--firstcontainer-text);
@@ -115,7 +115,7 @@ body{
 
 .planning-right{
     height: 100%;
-    width: 50%;
+    width: 46%;
     background: url('AnImages/ImageTest.jpg'); 
     background-size: cover;
 }
@@ -464,4 +464,63 @@ h1{
 .toggleButton:hover{
     color: orange;
 }
-
+.switch10 {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch10 input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider10 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    border: 1px solid white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider10:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider10 {
+    background-color: #fffa98;
+  }
+  
+  input:focus + .slider10 {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider10:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider10.round10 {
+    border-radius: 34px;
+  }
+  
+  .slider10.round10:before {
+    border-radius: 50%;
+  }
+  
