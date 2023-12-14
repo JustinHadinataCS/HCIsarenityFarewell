@@ -8,9 +8,7 @@
     --color-gray: rgb(118, 118, 118);
     --color-white: rgb(229, 229, 229);
 
-    body {
-        background-color: black;
-    }
+
 
     .card{
         background-repeat: no-repeat; 
@@ -18,6 +16,64 @@
     .card-body{
         background-repeat: no-repeat; 
     }
+}
+body {
+        transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+        
+    background-color: var(--team-text-background) !important;
+}
+:root{
+    --white1: #F1E4E8;
+    --white2: #E2DCDE;
+    --white3: #E2DCDE;
+    --white4: #b97375;
+    --white5: #2D2D34;
+    --white6: #FFE548;
+    --white7: #582707;
+    --white8: #CEB5B7;
+    --black1: #E9FFF9;
+    --black2: #1D3354;
+    --black3: #090C02;
+    --black4: #FFFFFA;
+    --black5: #BDD4E7;
+    --black6: #0D1317;
+    --black-linearGradient: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('AnImages/candle2.jpg');
+    --white-linearGradient: linear-gradient(rgba(0,0,0,0.43),rgba(0,0,0,0.75)),url('AnImages/WhiteCandle.jpg');
+
+}
+
+
+.light{
+    --bg: var(--white8);
+    --bg-nav: var(--white2);
+    --text: var(var(--white5));
+    --firstcontainer-background: var(--white4);
+    --firstcontainer-text: var(--white5);
+    --pricing-bg: var(--white2);  
+    --team-text-background: var(--white1);
+    --team-text-text: var(--white5);
+    --meetourTime-line: var(--white4);
+    --HomeBackground: var(--white-linearGradient);
+
+}
+
+.dark{
+    --bg: var(--black1);
+    --bg-nav: var(--black2);
+    --text: var(--black3);
+    --firstcontainer-background: var(--black3);
+    --firstcontainer-text: var(--black4);
+    --pricing-bg: var(--black5);  
+    --team-text-background: var(--black3);
+    --team-text-text: var(--black1);
+    --meetourTime-line: var(--black2);
+    --HomeBackground: var(--black-linearGradient);
+
+
+}
+nav{
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+    background-color: var(--team-text-background) !important;
 }
 a {
     text-decoration: none;
@@ -62,6 +118,8 @@ a {
     border: 0.3px solid var(--color-white) ;
     animation: slideUp 0.3s linear   1 normal;
     transition: all 0.3s;
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+    
 }
 .homeButton:hover{
     transform: translateY(-10px);
@@ -73,6 +131,7 @@ a {
 .toggleButton{
     background-color: transparent;
     border: none;
+    color: white;
 }
 
 .toggleButton:click{
@@ -100,9 +159,10 @@ a {
 .text{
     height: 100%;
     width: 65%;
-    background-color: wheat;
+    background-color: var(--pricing-bg);
+    color: var(--firstcontainer-background);
     padding: 10px;
-
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 }
 
 .image{
@@ -112,13 +172,141 @@ a {
     background-size: cover;
 
 }
+@media (max-width: 1000px){
+    .market-container{
+        height: 600px;
+        flex-direction: column;
 
-
+    }
+    .text,.image{
+        width: 100%;
+    }
+}
 
 .strong-text{
     font-family: 'Graublau Web', sans-serif;
     font-weight:bold; 
     font-size: 3em;
 }
+.important{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
   
+.total-item{
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
 
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px; 
+    position: relative;
+    font-family: var(--font-text);
+
+
+}
+
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: rgb(118, 118, 118);
+    position: absolute;
+    left: 0%;
+    bottom: -5;
+    transition: 0.7s;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.container-fluid{
+    background-color: var(--team-text-background);
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+.startRight {
+    float: right;
+}
+
+.toggleButton:hover{
+    color: orange;
+}
+.switch10 {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch10 input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider10 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    border: 1px solid white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider10:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider10 {
+    background-color: #CEB5B7;
+
+  }
+  
+  input:focus + .slider10 {
+    box-shadow: 0 0 1px #ffffff;
+  }
+  
+  input:checked + .slider10:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider10.round10 {
+    border-radius: 34px;
+  }
+  
+  .slider10.round10:before {
+    border-radius: 50%;
+  }

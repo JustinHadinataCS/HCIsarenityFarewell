@@ -5,18 +5,19 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: lighter;
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('AnImages/LoginBackground.gif');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url('AnImages/LoginBackground.gif');
     background-size: cover;
     background-position: center;
 }
 
-
-.main-container {
+.main-container-100 {
     width: 420px;
     background: transparent;
     border: 2px solid white;
@@ -26,36 +27,36 @@ body{
     padding: 30px 40px;
 }
 
-.main-container h1{
+.main-container-100 h1 {
     font-size: 36px;
     text-align: center;
 }
 
-.main-container .input-box{
+.main-container-100 .input-box {
     position: relative;
     width: 100%;
     height: 50px;
     margin: 30px 0;
 }
 
-.input-box input{
+.main-container-100 input {
     width: 100%;
     height: 100%;
     background: transparent;
     border: none;
     outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 40px;
     font-size: 16px;
     color: rgb(255, 255, 255);
     padding: 20px 45px 20px 20px;
 }
 
-.input-box input::placeholder{
+.main-container-100 input::placeholder {
     color: white;
 }
 
-.input-box i {
+.main-container-100 i {
     position: absolute;
     right: 20px;
     top: 50%;
@@ -63,54 +64,53 @@ body{
     font-size: 20px;
 }
 
-.main-container .remember-forgot{
+.main-container-100 .remember-forgot {
     display: flex;
     justify-content: space-between;
     font-size: 14.5px;
     margin: -15px 0 15px;
     color: rgb(255, 255, 255);
-
 }
 
-.remember-forgot label input{
+.main-container-100 label input {
     accent-color: white;
     margin-right: 3px;
 }
-.remember-forgot a {
+.main-container-100 a {
     color: white;
     text-decoration: none;
     position: relative;
 }
 
-.remember-forgot a:hover {
+.main-container-100 a:hover {
     color: orange;
 }
 
-.remember-forgot a:after {
+.main-container-100 a:after {
     content: '';
     display: block;
     position: absolute;
     left: 0;
     bottom: -2px;
-    width: 0; 
+    width: 0;
     height: 2px;
     margin: -4px;
     background-color: orange;
-    transition: width 0.6s ease-in-out; 
+    transition: width 0.6s ease-in-out;
 }
 
-.remember-forgot a:hover:after {
-    width: 100%; 
+.main-container-100 a:hover:after {
+    width: 100%;
 }
 
-.main-container .btn{
+.main-container-100 .btn {
     width: 100%;
     height: 45px;
     background-color: white;
     border: none;
     outline: none;
     border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     font-size: 18px;
     color: #333;
@@ -118,35 +118,33 @@ body{
     transition: 0.6s all;
 }
 
-
-.main-container .btn:hover{
+.main-container-100 .btn:hover {
     background-color: orange;
-    color: black
-
+    color: black;
 }
 
-.main-container .register-link{
+.main-container-100 .register-link {
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;
 }
 
-.register-link p a {
+.main-container-100 p a {
     color: white;
     text-decoration: none;
     font-weight: 600;
 }
 
-.register-link p a:hover{
+.main-container-100 p a:hover {
     color: orange;
 }
 
-.js-reminder{
+.js-reminder {
     margin: 5px;
     font-weight: 900;
     color: orange;
 }
 
-.title-login:hover{
+.title-login:hover {
     color: orange;
 }

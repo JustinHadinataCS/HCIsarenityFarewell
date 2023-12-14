@@ -28,13 +28,57 @@
       <link rel="stylesheet" href="styles/shared/amazon-header.css">
       <link rel="stylesheet" href="styles/pages/card.css">
       <style>
-        body{
-          background-color: rgb(155, 155, 155) !important;
-        }
+        :root{
+    --white1: #F1E4E8;
+    --white2: #E2DCDE;
+    --white3: #E2DCDE;
+    --white4: #b97375;
+    --white5: #2D2D34;
+    --white6: #FFE548;
+    --white7: #FF5376;
+    --white8: #CEB5B7;
+    --black1: #E9FFF9;
+    --black2: #1D3354;
+    --black3: #090C02;
+    --black4: #FFFFFA;
+    --black5: #BDD4E7;
+    --black6: #0D1317;
+    --black-linearGradient: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('AnImages/candle2.jpg');
+    --white-linearGradient: linear-gradient(rgba(0,0,0,0.43),rgba(0,0,0,0.75)),url('AnImages/WhiteCandle.jpg');
+
+}
+
+
+.light{
+    --bg: var(--white8);
+    --bg-nav: var(--white2);
+    --text: var(var(--white5));
+    --firstcontainer-background: var(--white4);
+    --firstcontainer-text: var(--white5);
+    --pricing-bg: var(--white2);  
+    --team-text-background: var(--white7);
+    --team-text-text: var(--white5);
+    --meetourTime-line: var(--white4);
+    --HomeBackground: var(--white-linearGradient);
+
+}
+
+.dark{
+    --bg: var(--black1);
+    --bg-nav: var(--black2);
+    --text: var(--black3);
+    --firstcontainer-background: var(--black3);
+    --firstcontainer-text: var(--black4);
+    --pricing-bg: var(--black5);  
+    --team-text-background: var(--black3);
+    --team-text-text: var(--black1);
+    --meetourTime-line: var(--black2);
+    --HomeBackground: var(--black-linearGradient);
+}
       </style>
     </head>
-<body>
-        <nav class="navbar navbar-expand-lg bg-dark border-body shadow-lg" data-bs-theme="dark">
+<body class="dark">
+        <nav style="background-color: var(--team-text-background);" class="navbar navbar-expand-lg " data-bs-theme="dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html">
                 <img src="AnImages/Logo2.png" alt="Bootstrap" width="80" height="70">
@@ -64,17 +108,31 @@
                   </li>
 
                 </ul>
+                <form class="d-flex10" role="search">
+                  <label class="switch10">
+                    <input type="checkbox">
+                    <span class="slider10 round10"></span>
+                  </label>
+                </form>
+                
+                <form action="login.html" class="d-flex mx-4 js-text-input" role="search">
+                
+                  <button id="signUpButton" class="toggleButton">
+                      Sign Up
+                  </button>
+              </form>
+              <form action="login.html"  class="d-flex mx-4" role="search">
+                  <button id="logInButton" class="toggleButton">
+                      Log in
+                  </button>
+              </form>
                 <form class="d-flex mx-4  " role="search">
-                  <a href="checkout.html" class=" mx-4 toggleButton">
-                      Total Item: <p>            <div class="cart-quantity js-cart-quantity">0</div>
+                  <a href="checkout.html" class="total-item mx-4 toggleButton">
+                      Total Item: <p><div class="cart-quantity js-cart-quantity">0</div>
+
                       </p>
                     </a>
 
-                <form class="d-flex" role="search">
-                    <button class=" toggleButton">
-                        <i class="bi bi-toggle-off toggleButton "></i>
-                    </button>
-                </form>
               </div>
 
           
@@ -89,7 +147,7 @@
         <div class="image"></div>
       </div>
       <div class="container-fluid">
-        <h1 class="my-5">Our Store:</h1>
+        <h1 class="important">Funeral Items</h1>
       <div class="main">
         <div class="products-grid js-products-grid">
         </div>
@@ -103,9 +161,10 @@
         </div>
       </div>
   
-      <script type="module" src="scripts/marketCard.js"></script>
+    <script type="module" src="scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+
 
 </body>
 </html>
