@@ -35,6 +35,7 @@ body {
 
 /*Resizing and setting the background colour for the circles section*/
 #serviceSection {
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
     background-color: var(--bodyBackground);
     padding-bottom: 5vw;
     padding-top: 2vw;
