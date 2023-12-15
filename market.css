@@ -101,7 +101,7 @@ a {
     font-family: var(--font-family);
     animation: slideUp 0.3s linear   1 normal;
 }
-  
+
 .noBorder{
     border: none;
 }

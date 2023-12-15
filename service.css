@@ -1,15 +1,18 @@
 
 /* For service.html */
 
+@import url('https://fonts.cdnfonts.com/css/graublau-web');
+
 body {
-    background-color: rgb(22, 22, 22) !important;
+    background-color: var(--bodyBackground) !important;
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 }
 
 /*Resizing the candle image and changing text content*/
 #bannerService {
     width: 100%;
-    height: 50vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('AnImages/candle2.jpg');
+    height: 80vh;
+    background-image: var(--HomeBackground);
     background-size: cover;
     background-position: center;
     color: white;
@@ -27,11 +30,12 @@ body {
     text-align: center;
     height: 5vh;
     margin-top: 5vh;
+    color: var(--text);
 }
 
 /*Resizing and setting the background colour for the circles section*/
 #serviceSection {
-    background-color: white;
+    background-color: var(--bodyBackground);
     padding-bottom: 5vw;
     padding-top: 2vw;
 }
@@ -120,7 +124,7 @@ body {
 .whiteArea {
     width: 35vw;
     height: 30vw;
-    background-color: white;
+    background-color: var(--descriptionArea);
 }
 
 /*To decide the location of the service description*/
@@ -145,7 +149,7 @@ body {
     border-color: white;
 }
 
-button:hover {
+.button:hover {
     background-color: orange;
 }
 
@@ -171,6 +175,7 @@ button:hover {
     text-align: center;
     padding-top: 3vw;
     font-size: 1.8vw;
+    color: var(--text);
 }
 
 .descriptionServices {
@@ -179,6 +184,7 @@ button:hover {
     padding-right: 2vw;
     padding-top: 2vw;
     font-size: 1.02vw;
+    color: var(--text);
 }
 
 /* Full-width input fields */
@@ -274,4 +280,146 @@ button[type=submit]:hover {
     * {
         display: none;
     }
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px; 
+    position: relative;
+    font-family: var(--font-text);
+
+
+}
+
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: rgb(118, 118, 118);
+    position: absolute;
+    left: 0%;
+    bottom: -5;
+    transition: 0.7s;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.container-fluid{
+    background-color: transparent;
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+.startRight {
+    float: right;
+}
+
+.toggleButton:hover{
+    color: orange;
+}
+.switch10 {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch10 input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider10 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    border: 1px solid white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider10:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider10 {
+    background-color: #CEB5B7;
+
+}
+
+input:focus + .slider10 {
+    box-shadow: 0 0 1px #ffffff;
+}
+
+input:checked + .slider10:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider10.round10 {
+    border-radius: 34px;
+}
+
+.slider10.round10:before {
+    border-radius: 50%;
+}
+
+:root{
+    --white1: #F1E4E8;
+    --white2: #E2DCDE;
+    --white3: #E2DCDE;
+    --white4: #b97375;
+    --white5: #2D2D34;
+    --white6: #FFE548;
+    --white7: #582707;
+    --white8: #CEB5B7;
+    --black1: #E9FFF9;
+    --black2: #1D3354;
+    --black3: #090C02;
+    --black4: #FFFFFA;
+    --black5: #BDD4E7;
+    --black6: #0D1317;
+    --black-linearGradient: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("serviceImages/servicesDark.jpg");
+    --white-linearGradient: linear-gradient(rgba(0,0,0,0.43),rgba(0,0,0,0.75)),url("serviceImages/servicesLight.jpg");
+
+}
+
+.light{
+    --bodyBackground: var(--white3);
+    --text: var(--white5);
+    --descriptionArea: var(--white8);
+
+}
+
+.dark{
+    --bodyBackground: var(--black6);
+    --text: var(--black4);
+    --descriptionArea: var(--black3);
+
+
 }
