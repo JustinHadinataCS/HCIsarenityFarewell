@@ -1,22 +1,29 @@
+@import url('https://fonts.cdnfonts.com/css/graublau-web');
+:root{
+    --font-text: 'Inter', sans-serif;
+    --font-button: 'Roboto', sans-serif;
+
+    --color-gray: rgb(118, 118, 118);
+    --color-white: rgb(229, 229, 229);
+}
+
+  
 .main {
   max-width: 1100px;
   padding-left: 30px;
   padding-right: 30px;
-
-  margin-top: 140px;
+  margin-top: 40px;
   margin-bottom: 100px;
-
-  /* margin-left: auto;
-     margin-right auto;
-     Is a trick for centering an element horizontally
-     without needing a container. */
   margin-left: auto;
   margin-right: auto;
 }
 
 .page-title {
-  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 200;
   font-size: 22px;
+  margin-top: 0px;
   margin-bottom: 18px;
 }
 body{
@@ -26,13 +33,8 @@ body{
 
 .checkout-grid {
   display: grid;
-  /* Here, 1fr means the first column will take
-     up the remaining space in the grid. */
   grid-template-columns: 1fr 350px;
   column-gap: 12px;
-
-  /* Use align-items: start; to prevent the elements
-     in the grid from stretching vertically. */
   align-items: start;
 }
 
@@ -51,11 +53,15 @@ body{
   border: 1px solid rgb(255, 255, 255);
   border-radius: 4px;
   padding: 18px;
+  font-family: var(--font-text);
+
 }
 
 .cart-item-container {
   margin-bottom: 12px;
   background-color: black;
+  font-family: var(--font-text);
+
 }
 
 .payment-summary {
@@ -64,10 +70,6 @@ body{
 
 @media (max-width: 1000px) {
   .payment-summary {
-    /* grid-row: 1 means this element will be placed into row
-      1 in the grid. (Normally, the row that an element is
-      placed in is determined by the order of the elements in
-      the HTML. grid-row overrides this default ordering). */
     grid-row: 1;
     margin-bottom: 12px;
   }
@@ -83,9 +85,6 @@ body{
 
 .cart-item-details-grid {
   display: grid;
-  /* 100px 1fr 1fr; means the 2nd and 3rd column will
-     take up half the remaining space in the grid
-     (they will divide up the remaining space evenly). */
   grid-template-columns: 100px 1fr 1fr;
   column-gap: 25px;
 }
@@ -100,11 +99,6 @@ body{
 .product-image {
   max-width: 100%;
   max-height: 120px;
-
-  /* margin-left: auto;
-     margin-right auto;
-     Is a trick for centering an element horizontally
-     without needing a container. */
   margin-left: auto;
   margin-right: auto;
 }
@@ -114,11 +108,7 @@ body{
   margin-bottom: 8px;
 }
 
-.product-price {
-  color: rgb(255, 255, 255);
-  font-weight: 700;
-  margin-bottom: 5px;
-}
+
 
 .product-quantity .link-primary {
   margin-left: 3px;
@@ -126,15 +116,6 @@ body{
 
 @media (max-width: 1000px) {
   .delivery-options {
-    /* grid-column: 1 means this element will be placed
-       in column 1 in the grid. (Normally, the column that
-       an element is placed in is determined by the order
-       of the elements in the HTML. grid-column overrides
-       this default ordering).
-       
-       / span 2 means this element will take up 2 columns
-       in the grid (Normally, each element takes up 1
-       column in the grid). */
     grid-column: 1 / span 2;
   }
 }
@@ -175,9 +156,6 @@ body{
 
 .payment-summary-row {
   display: grid;
-  /* 1fr auto; means the width of the 2nd column will be
-     determined by the elements inside the column (auto).
-     The 1st column will take up the remaining space. */
   grid-template-columns: 1fr auto;
 
   font-size: 15px;
@@ -197,7 +175,7 @@ body{
 }
 
 .total-row {
-  color: rgb(177, 39, 4);
+  color: orange;
   font-weight: 700;
   font-size: 18px;
 
@@ -214,3 +192,55 @@ body{
   margin-top: 11px;
   margin-bottom: 15px;
 }
+
+::selection{
+  color: black;
+  background-color: orange
+}
+
+paragraph::selection{
+  color: black;
+  background-color: orange
+}
+
+.important-back{
+  padding-top: 15px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding-right: 15px;
+  font-family: var(--font-text);
+  font-size: 1.4em;
+}
+.important-back:hover{
+  transition: 0.3s all;
+  color: orange;
+  text-decoration: none;
+}
+.nav-important-container{
+  display: flex;
+  margin: 5px;
+  justify-content: space-between;
+
+  
+}
+.proper-logo{
+  width: 60px;
+  height: 60px;
+
+}
+.title-container{
+  margin-top: 10px;
+  display: flex;
+  color: white;
+  font-size: 3.1em;
+}
+.title-container p{
+  margin: auto;
+  text-align: center;
+}
+.title-container p:hover{
+  cursor: pointer;
+  transition: 0.3s all;
+  color: orange;
+}
+
