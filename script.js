@@ -27,3 +27,18 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Check if there's a hash in the URL
+  if (window.location.hash) {
+    // Get the target element by id
+    var pricing = document.querySelector(window.location.hash);
+
+    // Scroll to the target element
+    if (pricing) {
+      pricing.scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  }
+});

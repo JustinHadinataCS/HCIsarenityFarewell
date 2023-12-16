@@ -72,6 +72,36 @@
                 data5.textContent = "Date: " + user.funeralDateService2;
                 data6 = document.createElement("p");
                 data6.textContent = "Name of Deceased: " + user.deceasedNameService2;
+            } else if (user.hasOwnProperty("firstNameService3")) {
+                heading = document.createElement("h2");
+                heading.textContent = "Hire Minister";
+                data1 = document.createElement("p");
+                data1.textContent = "First Name: " + user.firstNameService3;
+                data2 = document.createElement("p");
+                data2.textContent = "Last Name: " + user.lastNameService3;
+                data3 = document.createElement("p");
+                data3.textContent = "Contact Email: " + user.emailService3;
+                data4 = document.createElement("p");
+                data4.textContent = "Location: " + user.funeralLocationService3;
+                data5 = document.createElement("p");
+                data5.textContent = "Date: " + user.funeralDateService3;
+                data6 = document.createElement("p");
+                data6.textContent = "Size of Coffin: " + user.coffinSizeService3;
+            } else if (user.hasOwnProperty("firstNameService4")) {
+                heading = document.createElement("h2");
+                heading.textContent = "Hire Minister";
+                data1 = document.createElement("p");
+                data1.textContent = "First Name: " + user.firstNameService4;
+                data2 = document.createElement("p");
+                data2.textContent = "Last Name: " + user.lastNameService4;
+                data3 = document.createElement("p");
+                data3.textContent = "Contact Email: " + user.emailService4;
+                data4 = document.createElement("p");
+                data4.textContent = "Location: " + user.funeralLocationService4;
+                data5 = document.createElement("p");
+                data5.textContent = "Date: " + user.funeralDateService4;
+                data6 = document.createElement("p");
+                data6.textContent = "Gravestone Blueprint: " + user.gravestoneService4;
             }
 
             // Add a remove button for each entry
