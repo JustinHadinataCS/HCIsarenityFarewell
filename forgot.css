@@ -7,9 +7,9 @@
 }
 
 body{
-    display: flex;
+/*     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     min-height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('AnImages/ocean.gif');
     background-size: cover;
@@ -18,6 +18,8 @@ body{
 
 
 .main-container {
+    margin: auto;
+    margin-top: 75px;
     width: 420px;
     background: transparent;
     border: 2px solid white;
@@ -152,3 +154,20 @@ body{
     cursor: pointer;
     color: orange;
 }
+.container-left{
+    margin: 10px;
+    font-size: 1.2em;
+}
+.important-back{
+    padding-top: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding-right: 15px;
+    font-family: var(--font-text);
+    font-size: 1.2em;
+  }
+  .important-back:hover{
+    transition: 0.3s all;
+    color: orange;
+    text-decoration: none;
+  }
