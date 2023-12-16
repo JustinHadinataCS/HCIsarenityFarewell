@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data</title>
+</head>
+<body>
+    <a href="service.html">go back</a>
+    <link rel="stylesheet" href="serviceOrders.css">
+    <h1>Orders</h1>
+    <div class="ordersList" id="userDataList"></div>
+
+<script>
+    function removeUserData(index) {
+        // Retrieve user data from localStorage
+        var userDataJSON = localStorage.getItem("userData");
+        var userData = userDataJSON ? JSON.parse(userDataJSON) : [];
+
+        // Remove the selected user data
+        userData.splice(index, 1);
+
+        // Save the updated array to localStorage
+        localStorage.setItem("userData", JSON.stringify(userData));
+
+        // Update the displayed list
+        displayUserData();
+    }
+
+    function displayUserData() {
+        var userDataList = document.getElementById("userDataList");
+        userDataList.innerHTML = "";
+
+        // Retrieve user data from localStorage
+        var userDataJSON = localStorage.getItem("userData");
+        var userData = userDataJSON ? JSON.parse(userDataJSON) : [];
+
+        // Display each user's data in the list
+        userData.forEach(function (user, index) {
+            var listItem = document.createElement("div");
+            var heading, data1, data2, data3, data4, data5, data6;
+
+            if (user.hasOwnProperty("firstNameService1")) {
+                // Music data
+                heading = document.createElement("h2");
+                heading.textContent = "Request Music";
+                data1 = document.createElement("p");
+                data1.textContent = "First Name: " + user.firstNameService1;
+                data2 = document.createElement("p");
+                data2.textContent = "Last Name: " + user.lastNameService1;
+                data3 = document.createElement("p");
+                data3.textContent = "Contact Email: " + user.emailService1;
+                data4 = document.createElement("p");
+                data4.textContent = "Location: " + user.funeralLocationService1;
+                data5 = document.createElement("p");
+                data5.textContent = "Date: " + user.funeralDateService1;
+                data6 = document.createElement("p");
+                data6.textContent = "Music File: " + user.funeralMusicFileService1;
+            } else if (user.hasOwnProperty("firstNameService2")) {
+                // Minister data
+                heading = document.createElement("h2");
+                heading.textContent = "Hire Minister";
+                data1 = document.createElement("p");
+                data1.textContent = "First Name: " + user.firstNameService2;
+                data2 = document.createElement("p");
+                data2.textContent = "Last Name: " + user.lastNameService2;
+                data3 = document.createElement("p");
+                data3.textContent = "Contact Email: " + user.emailService2;
+                data4 = document.createElement("p");
+                data4.textContent = "Location: " + user.funeralLocationService2;
+                data5 = document.createElement("p");
+                data5.textContent = "Date: " + user.funeralDateService2;
+                data6 = document.createElement("p");
+                data6.textContent = "Name of Deceased: " + user.deceasedNameService2;
+            }
+
+            // Add a remove button for each entry
+            var removeButton = document.createElement("button");
+            removeButton.textContent = "Cancel Request";
+            removeButton.className = "removeButton";
+            removeButton.onclick = function() {
+                removeUserData(index);
+            };
+
+            listItem.appendChild(heading);
+            listItem.appendChild(data1);
+            listItem.appendChild(data2);
+            listItem.appendChild(data3);
+            listItem.appendChild(data4);
+            listItem.appendChild(data5);
+            listItem.appendChild(data6);
+            listItem.appendChild(removeButton);
+
+            // Append the list item to the user data list
+            userDataList.appendChild(listItem);
+        });
+    }
+
+    // Initial display
+    displayUserData();
+</script>
+</body>
+</html>
