@@ -346,7 +346,9 @@ button[type=submit]:hover {
 .startRight {
     float: right;
 }
-
+.serenity-title{
+    animation: slideUp 0.5s linear  1 normal;
+}
 .toggleButton:hover{
     color: orange;
 }
@@ -443,5 +445,20 @@ input:checked + .slider10:before {
     --text: var(--black4);
     --descriptionArea: var(--black3);
 
+
+}
+
+@keyframes slideUp {
+    from{
+      transform: translateY(30px);
+    }
+    to{
+      transform: translateY(0);
+    }
+}
+
+
+.card-text{
+    animation: slideUp 0.7s linear  1 normal;
 
 }
