@@ -163,6 +163,7 @@
         </div>
         <button class="button rightButton" onclick="document.getElementById('pop-upFuneralMinister').style.display='block'"><b>Hire Minister</b></button>
       </div>
+      <button class="button rightButton" onclick="document.getElementById('pop-upFuneralMinister').style.display='block'"><b>Hire Minister</b></button>
     </div>
     <div data-aos="fade-up">
       <div class="services" id="morticianPart">
@@ -172,6 +173,7 @@
         </div>
         <button class="button leftButton" onclick="document.getElementById('pop-upFuneralMortician').style.display='block'"><b>Hire Mortician</b></button>
       </div>
+      <button class="button leftButton" onclick="document.getElementById('pop-upFuneralMortician').style.display='block'"><b>Hire Mortician</b></button>
     </div>
     <div data-aos="fade-up">
       <div class="services" id="gravestonePart">
@@ -181,6 +183,7 @@
         </div>
         <button class="button rightButton" onclick="document.getElementById('pop-upGravestone').style.display='block'"><b>Order Gravestone</b></button>
       </div>
+      <button class="button rightButton" onclick="document.getElementById('pop-upGravestone').style.display='block'"><b>Order Gravestone</b></button>
     </div>
 
     <div data-aos="fade-up">
@@ -191,7 +194,7 @@
         </div>
         <button class="button leftButton"><b>Select Package</b></button>
       </div>
-  
+      <a href="index.html#pricing"><button class="button leftButton"><b>Select Package</b></button></a>
     </div>
 
     <div id="pop-upFuneralMusic" class="pop-upBackground">
@@ -259,26 +262,29 @@
     </div>
 
     <div id="pop-upFuneralMortician" class="pop-upBackground">
-      <form class="pop-up animate" action="/action_page.php" method="post">
+      <form class="pop-up animate" id="morticianForms">
         <div class="closeButtonPosition">
           <span onclick="document.getElementById('pop-upFuneralMortician').style.display='none'" class="close" title="Close">&times;</span>
         </div>
         <div class="pop-upContent">
           <p class="pop-upHeading">Hire Mortician</p>
           <label><b>First Name</b></label>
-          <input type="text" placeholder="Enter First Name" required>
+          <input type="text" placeholder="Enter First Name" id="firstNameService3">
     
           <label><b>Last Name</b></label>
-          <input type="text" placeholder="Enter Last Name" required>
+          <input type="text" placeholder="Enter Last Name" id="lastNameService3">
+
+          <label><b>Contact Email</b></label>
+          <input type="email" placeholder="Enter Email" id="emailService3">
     
           <label><b>Location Of Funeral</b></label>
-          <input type="text" placeholder="Enter Location" required>
+          <input type="text" placeholder="Enter Location" id="funeralLocationService3">
     
           <label><b>Date Of Funeral</b></label>
-          <input type="date" id="funeralDateService1" required>
+          <input type="date" id="funeralDateService3">
     
-          <label><b>Upload Music</b></label>
-          <input type="file" id="funeralMusic" accept=".mp3,audio/*" required>
+          <label><b>Choose Coffin Size</b></label>
+          <input type="text" id="coffinSizeService3">
     
           <label><b>Method Of Payment</b></label>
     
@@ -288,29 +294,32 @@
     </div>
 
     <div id="pop-upGravestone" class="pop-upBackground">
-      <form class="pop-up animate" action="/action_page.php" method="post">
+      <form class="pop-up animate" id="gravestoneForms">
         <div class="closeButtonPosition">
           <span onclick="document.getElementById('pop-upGravestone').style.display='none'" class="close" title="Close">&times;</span>
         </div>
         <div class="pop-upContent">
           <p class="pop-upHeading">Order Gravestone</p>
           <label><b>First Name</b></label>
-          <input type="text" placeholder="Enter First Name" required>
-    
+          <input type="text" placeholder="Enter First Name" id="firstNameService4">
+
           <label><b>Last Name</b></label>
-          <input type="text" placeholder="Enter Last Name" required>
-    
+          <input type="text" placeholder="Enter Last Name" id="lastNameService4">
+
+          <label><b>Contact Email</b></label>
+          <input type="email" placeholder="Enter Email" id="emailService4">
+
           <label><b>Location Of Funeral</b></label>
-          <input type="text" placeholder="Enter Location" required>
+          <input type="text" placeholder="Enter Location" id="funeralLocationService4">
     
           <label><b>Date Of Funeral</b></label>
-          <input type="date" id="funeralDateService1" required>
-    
-          <label><b>Upload Music</b></label>
-          <input type="file" id="funeralMusic" accept=".mp3,audio/*" required>
-    
+          <input type="date" id="funeralDateService4">
+
+          <label><b>Upload Gravestone Blueprint</b></label>
+          <input type="file" accept="image/*" id="gravestoneService4">
+
           <label><b>Method Of Payment</b></label>
-    
+
           <button type="submit">Hire</button>
         </div>
       </form>
@@ -397,7 +406,7 @@
 </script>
 
 <script>
-  document.getElementById("musicForms").addEventListener('submit', function(event) {
+  document.getElementById("musicForms").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevents the form from submitting in the traditional way
 
     var firstNameService1 = document.getElementById("firstNameService1").value;
@@ -409,7 +418,7 @@
 
     if (firstNameService1 && lastNameService1 && emailService1 && funeralLocationService1 && funeralDateService1 && funeralMusicFileService1) {
         // Retrieve existing user data or create an empty array
-        var existingUserData = JSON.parse(localStorage.getItem('userData')) || [];
+        var existingUserData = JSON.parse(localStorage.getItem("userData")) || [];
 
         // Ensure existingUserData is an array
         if (!Array.isArray(existingUserData)) {
@@ -422,17 +431,17 @@
         existingUserData.push(userData);
 
         // Save the updated array to localStorage
-        localStorage.setItem('userData', JSON.stringify(existingUserData));
+        localStorage.setItem("userData", JSON.stringify(existingUserData));
 
         alert('Form submitted successfully!');
         
         // Add the animation class and set a timeout to remove the element after the animation completes
         var popUpFuneralMusic = document.getElementById("pop-upFuneralMusic");
-        popUpFuneralMusic.classList.add('animate-slide-up');
+        popUpFuneralMusic.classList.add("animate-slide-up");
         setTimeout(function() {
           document.getElementById("musicForms").reset();
           popUpFuneralMusic.style.display = "none";
-          popUpFuneralMusic.classList.remove('animate-slide-up'); // Reset the class for future use
+          popUpFuneralMusic.classList.remove("animate-slide-up"); // Reset the class for future use
         }, 1000); // Adjust the timeout duration based on your animation duration
 
     } else {
@@ -440,7 +449,7 @@
     }
 });
 
-  document.getElementById("ministerForms").addEventListener('submit', function(event) {
+  document.getElementById("ministerForms").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevents the form from submitting in the traditional way
     var firstNameService2 = document.getElementById("firstNameService2").value;
     var lastNameService2 = document.getElementById("lastNameService2").value;
@@ -451,7 +460,7 @@
 
     if (firstNameService2 && lastNameService2 && emailService2 && funeralLocationService2 && funeralDateService2 && deceasedNameService2) {
         // Retrieve existing user data or create an empty array
-        var existingUserData = JSON.parse(localStorage.getItem('userData')) || [];
+        var existingUserData = JSON.parse(localStorage.getItem("userData")) || [];
 
         // Ensure existingUserData is an array
         if (!Array.isArray(existingUserData)) {
@@ -464,16 +473,96 @@
         existingUserData.push(userData);
 
         // Save the updated array to localStorage
-        localStorage.setItem('userData', JSON.stringify(existingUserData));
+        localStorage.setItem("userData", JSON.stringify(existingUserData));
 
         alert('Form submitted successfully!');
         // Add the animation class and set a timeout to remove the element after the animation completes
         var popUpFuneralMinister = document.getElementById("pop-upFuneralMinister");
-        popUpFuneralMinister.classList.add('animate-slide-up');
+        popUpFuneralMinister.classList.add("animate-slide-up");
         setTimeout(function() {
           document.getElementById("ministerForms").reset();
           popUpFuneralMinister.style.display = "none";
-          popUpFuneralMinister.classList.remove('animate-slide-up'); // Reset the class for future use
+          popUpFuneralMinister.classList.remove("animate-slide-up"); // Reset the class for future use
+        }, 1000); // Adjust the timeout duration based on your animation duration
+    } else {
+        alert('Please fill in all fields.');
+    }
+});
+
+  document.getElementById("morticianForms").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevents the form from submitting in the traditional way
+    var firstNameService3 = document.getElementById("firstNameService3").value;
+    var lastNameService3 = document.getElementById("lastNameService3").value;
+    var emailService3 = document.getElementById("emailService3").value;
+    var funeralLocationService3 = document.getElementById("funeralLocationService3").value;
+    var funeralDateService3 = document.getElementById("funeralDateService3").value;
+    var coffinSizeService3 = document.getElementById("coffinSizeService3").value;
+
+    if (firstNameService3 && lastNameService3 && emailService3 && funeralLocationService3 && funeralDateService3 && coffinSizeService3) {
+        // Retrieve existing user data or create an empty array
+        var existingUserData = JSON.parse(localStorage.getItem("userData")) || [];
+
+        // Ensure existingUserData is an array
+        if (!Array.isArray(existingUserData)) {
+            existingUserData = [];
+        }
+
+        var userData = {firstNameService3: firstNameService3, lastNameService3: lastNameService3, emailService3: emailService3, funeralLocationService3: funeralLocationService3, funeralDateService3: funeralDateService3, coffinSizeService3: coffinSizeService3};
+
+        // Add new user data to the array
+        existingUserData.push(userData);
+
+        // Save the updated array to localStorage
+        localStorage.setItem("userData", JSON.stringify(existingUserData));
+
+        alert('Form submitted successfully!');
+        // Add the animation class and set a timeout to remove the element after the animation completes
+        var popUpFuneralMortician = document.getElementById("pop-upFuneralMortician");
+        popUpFuneralMortician.classList.add("animate-slide-up");
+        setTimeout(function() {
+          document.getElementById("morticianForms").reset();
+          popUpFuneralMortician.style.display = "none";
+          popUpFuneralMortician.classList.remove("animate-slide-up"); // Reset the class for future use
+        }, 1000); // Adjust the timeout duration based on your animation duration
+    } else {
+        alert('Please fill in all fields.');
+    }
+});
+
+  document.getElementById("gravestoneForms").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevents the form from submitting in the traditional way
+    var firstNameService4 = document.getElementById("firstNameService4").value;
+    var lastNameService4 = document.getElementById("lastNameService4").value;
+    var emailService4 = document.getElementById("emailService4").value;
+    var funeralLocationService4 = document.getElementById("funeralLocationService4").value;
+    var funeralDateService4 = document.getElementById("funeralDateService4").value;
+    var gravestoneService4 = document.getElementById("gravestoneService4").value;
+
+    if (firstNameService4 && lastNameService4 && emailService4 && funeralLocationService4 && funeralDateService4 && gravestoneService4) {
+        // Retrieve existing user data or create an empty array
+        var existingUserData = JSON.parse(localStorage.getItem("userData")) || [];
+
+        // Ensure existingUserData is an array
+        if (!Array.isArray(existingUserData)) {
+            existingUserData = [];
+        }
+
+        var userData = {firstNameService4: firstNameService4, lastNameService4: lastNameService4, emailService4: emailService4, funeralLocationService4: funeralLocationService4, funeralDateService3: funeralDateService4, gravestoneService4: gravestoneService4};
+
+        // Add new user data to the array
+        existingUserData.push(userData);
+
+        // Save the updated array to localStorage
+        localStorage.setItem("userData", JSON.stringify(existingUserData));
+
+        alert('Form submitted successfully!');
+        // Add the animation class and set a timeout to remove the element after the animation completes
+        var popUpGravestone = document.getElementById("pop-upGravestone");
+        popUpGravestone.classList.add("animate-slide-up");
+        setTimeout(function() {
+          document.getElementById("gravestoneForms").reset();
+          popUpGravestone.style.display = "none";
+          popUpGravestone.classList.remove("animate-slide-up"); // Reset the class for future use
         }, 1000); // Adjust the timeout duration based on your animation duration
     } else {
         alert('Please fill in all fields.');
