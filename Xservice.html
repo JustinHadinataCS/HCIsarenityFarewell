@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity Farewell</title>
+    <link rel="icon" type="image/x-icon" href="Images/Logo2.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="service.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@160&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body class="dark">
+  <main>
+    <div id="bannerService">
+      <nav class="navbar navbar-expand-lg bg-transparent border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="AnImages/Logo2.png" alt="Bootstrap" width="80" height="70">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html#pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#planning">Planning</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active " aria-current="page" href="service.html">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="market.html">Market</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+
+            </ul>
+            <form  class="d-flex10" role="search">
+              <label class="switch10">
+                <input type="checkbox">
+                <span class="slider10 round10"></span>
+              </label>
+            </form>
+            <form  action="index.html" class="d-flex mx-4" role="search">
+                <button class=" toggleButton">
+                    Log out
+                </button>
+            <a href="serviceOrders.html" class="d-flex mx-5 toggleButton">Orders</a>
+            </form>
+            
+          </div>
+        </div>
+      </nav>
+      
+      <div class="container-fluid">
+        <h1 class=" d-flex justify-content-center header heading serenity-title title">Serenity Farewell</h1>
+      </div>
+      <div class="text-center container-fluid px-3 noBorder  my-3 d-flex justify-content-center">
+        <div class="noBorder border-none bg-transparent mb-3 d-flex justify-content-center" style="max-width: 30rem;">
+          <div class="card-body noBorder">
+            <p class="card-text paragraph noBorder sub-title">Get a glimpse of our services available provided to people that requires specific items and people in a funeral</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="serviceSection">
+      <div id="subheading">
+        <div data-aos="zoom-in-right">
+          <p>What do we provide?</p>
+        </div>
+      </div>
+      <div class="container circleSection text-center" >
+        <div class="row">
+          <div class="col">
+            <div data-aos="fade-up"  data-aos-offset="0">
+              <button class="circleSize" id="circle1" onClick="scrollToMusic()">
+                <p class="circleText">Funeral</p>
+                <p class="circleTextLine2 circleText">Music</p>
+              </button>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div data-aos="fade-up" data-aos-offset="0">
+              <button class="circleSize" id="circle2" onClick="scrollToMinister()">
+                <p class="circleText">Funeral</p>
+                <p class="circleTextLine2 circleText">Ministers</p>
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div data-aos="fade-up" data-aos-offset="0">
+              <button class="circleSize" id="circle3" onClick="scrollToMortician()">
+                <p class="circleText">Burial</p>
+                <p class="circleTextLine2 circleText">Preparations</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container circleRow2 text-center">
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-4">
+            <div data-aos="fade-up" data-aos-offset="0">
+              <button class="circleSize" id="circle4" onClick="scrollToGravestone()">
+                <p class="circleText">Custom</p>
+                <p class="circleTextLine2 circleText">Gravestones</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-4">
+            <div data-aos="fade-up" data-aos-offset="0">
+                <button class="circleSize" id="circle5" onClick="scrollToFuneral()">
+                <p class="circleText">Complete</p>
+                <p class="circleTextLine2 circleText">Funerals</p>
+                </button>
+            </div>
+          </div>
+          <div class="col-2"></div>
+        </div>
+      </div>
+    </div>
+    <div data-aos="fade-up">
+      <div class="services" id="musicPart">
+        <div class="whiteArea right">
+          <p class="subheadingServices">Funeral Music</p>
+          <p class="descriptionServices">Serenity farewell provides variety of funeral music, all performed with professional musicians with much experience. We have the ability to convert music pieces to piano focused, orchestral and many more. </p>
+        </div>
+        <div>
+          <button class="button leftButton" onclick="document.getElementById('pop-upFuneralMusic').style.display='block'"><b>Request Music</b></button>
+        </div>
+      </div>
+    </div>
+    <div data-aos="fade-up">
+      
+      <div class="services" id="ministerPart">
+        <div class="whiteArea left">
+          <p class="subheadingServices">Funeral Ministers</p>
+          <p class="descriptionServices">Having difficulty making the perfect eulogy to bid your loved ones farewell? Our ministers are top-notch when it comes to giving funeral speeches. With over a decade of experience and thousands of funerals attended as well as eulogies made, we will provide you a heartwarming experience of a speech.</p>
+        </div>
+        <button class="button rightButton" onclick="document.getElementById('pop-upFuneralMinister').style.display='block'"><b>Hire Minister</b></button>
+      </div>
+      <button class="button rightButton" onclick="document.getElementById('pop-upFuneralMinister').style.display='block'"><b>Hire Minister</b></button>
+    </div>
+    <div data-aos="fade-up">
+      <div class="services" id="morticianPart">
+        <div class="whiteArea right">
+          <p class="subheadingServices">Burial Preparations</p>
+          <p class="descriptionServices">When you can not find a suitable coffin size for your deceased in your local area, we are here to solve your problem with our solution. Giving bereaved users the choice to select a coffin size that is suitable with accurate measurements.</p>
+        </div>
+        <button class="button leftButton" onclick="document.getElementById('pop-upFuneralMortician').style.display='block'"><b>Hire Mortician</b></button>
+      </div>
+      <button class="button leftButton" onclick="document.getElementById('pop-upFuneralMortician').style.display='block'"><b>Hire Mortician</b></button>
+    </div>
+    <div data-aos="fade-up">
+      <div class="services" id="gravestonePart">
+        <div class="whiteArea left">
+          <p class="subheadingServices">Custom Gravestons</p>
+          <p class="descriptionServices">Sometimes when we visit our loved ones who have passed away, the normal gravestone does not give much personality nor vibrance. Due to this we also provide the option for users to request a custom-build gravestone that will make their deathbed distinct and more decorative.</p>
+        </div>
+        <button class="button rightButton" onclick="document.getElementById('pop-upGravestone').style.display='block'"><b>Order Gravestone</b></button>
+      </div>
+      <button class="button rightButton" onclick="document.getElementById('pop-upGravestone').style.display='block'"><b>Order Gravestone</b></button>
+    </div>
+
+    <div data-aos="fade-up">
+      <div class="services" id="funeralPart">
+        <div class="whiteArea right">
+          <p class="subheadingServices">Complete Funerals</p>
+          <p class="descriptionServices">Lastly, when necessary, you can check our pricings available that provide complete funerals as well as added bonuses. When you have zero experience on funerals, here is the most suitable place to start building your trust with us.</p>
+        </div>
+        <button class="button leftButton"><b>Select Package</b></button>
+      </div>
+      <a href="index.html#pricing"><button class="button leftButton"><b>Select Package</b></button></a>
+    </div>
+
+    <div id="pop-upFuneralMusic" class="pop-upBackground">
+      <form class="pop-up animate" id="musicForms">
+        <div class="closeButtonPosition">
+          <span onclick="document.getElementById('pop-upFuneralMusic').style.display='none'" class="close" title="Close">&times;</span>
+        </div>
+        <div class="pop-upContent">
+          <p class="pop-upHeading">Request Music</p>
+          <label><b>First Name</b></label>
+          <input type="text" placeholder="Enter First Name" id="firstNameService1">
+    
+          <label><b>Last Name</b></label>
+          <input type="text" placeholder="Enter Last Name" id="lastNameService1">
+
+          <label><b>Contact Email</b></label>
+          <input type="email" placeholder="Enter Email" id="emailService1">
+    
+          <label><b>Location Of Funeral</b></label>
+          <select id="funeralLocationService1" class="serviceDropdown">
+            <option>Bandung</option>
+            <option>Jakarta</option>
+            <option>Surabaya</option>
+            <option>Kalimantan</option>
+          </select>
+    
+          <label><b>Date Of Funeral</b></label>
+          <input type="date" id="funeralDateService1">
+    
+          <label><b>Upload Music</b></label>
+          <input type="file" id="funeralMusicFileService1" accept=".mp3,audio/*">
+    
+          <label id="reminder1"><b>Please fill in all fields</b></label>
+          <label id="success1"><b>Request Successful!</b></label>
+    
+          <button type="submit">Hire</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="pop-upFuneralMinister" class="pop-upBackground">
+      <form class="pop-up animate" id="ministerForms">
+        <div class="closeButtonPosition">
+          <span onclick="document.getElementById('pop-upFuneralMinister').style.display='none'" class="close" title="Close">&times;</span>
+        </div>
+        <div class="pop-upContent">
+          <p class="pop-upHeading">Hire Minister</p>
+          <label><b>First Name</b></label>
+          <input type="text" placeholder="Enter First Name" id="firstNameService2">
+    
+          <label><b>Last Name</b></label>
+          <input type="text" placeholder="Enter Last Name" id="lastNameService2">
+
+          <label><b>Contact Email</b></label>
+          <input type="email" placeholder="Enter Email" id="emailService2">
+
+          <label><b>Location Of Funeral</b></label>
+          <select id="funeralLocationService2" class="serviceDropdown">
+            <option>Bandung</option>
+            <option>Jakarta</option>
+            <option>Surabaya</option>
+            <option>Kalimantan</option>
+          </select>
+    
+          <label><b>Date Of Funeral</b></label>
+          <input type="date" id="funeralDateService2">
+
+          <label><b>Name of Deceased</b></label>
+          <input type="text" placeholder="Enter Name" id="deceasedNameService2">
+    
+          <label id="reminder2"><b>Please fill in all fields</b></label>
+          <label id="success2"><b>Request Successful!</b></label>
+    
+          <button type="submit">Hire</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="pop-upFuneralMortician" class="pop-upBackground">
+      <form class="pop-up animate" id="morticianForms">
+        <div class="closeButtonPosition">
+          <span onclick="document.getElementById('pop-upFuneralMortician').style.display='none'" class="close" title="Close">&times;</span>
+        </div>
+        <div class="pop-upContent">
+          <p class="pop-upHeading">Hire Mortician</p>
+          <label><b>First Name</b></label>
+          <input type="text" placeholder="Enter First Name" id="firstNameService3">
+    
+          <label><b>Last Name</b></label>
+          <input type="text" placeholder="Enter Last Name" id="lastNameService3">
+
+          <label><b>Contact Email</b></label>
+          <input type="email" placeholder="Enter Email" id="emailService3">
+    
+          <label><b>Location Of Funeral</b></label>
+          <select id="funeralLocationService3" class="serviceDropdown">
+            <option>Bandung</option>
+            <option>Jakarta</option>
+            <option>Surabaya</option>
+            <option>Kalimantan</option>
+          </select>
+    
+          <label><b>Date Of Funeral</b></label>
+          <input type="date" id="funeralDateService3">
+    
+          <label><b>Choose Coffin Size</b></label>
+          <input type="text" id="coffinSizeService3">
+    
+          <label id="reminder3"><b>Please fill in all fields</b></label>
+          <label id="success3"><b>Request Successful!</b></label>
+    
+          <button type="submit">Hire</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="pop-upGravestone" class="pop-upBackground">
+      <form class="pop-up animate" id="gravestoneForms">
+        <div class="closeButtonPosition">
+          <span onclick="document.getElementById('pop-upGravestone').style.display='none'" class="close" title="Close">&times;</span>
+        </div>
+        <div class="pop-upContent">
+          <p class="pop-upHeading">Order Gravestone</p>
+          <label><b>First Name</b></label>
+          <input type="text" placeholder="Enter First Name" id="firstNameService4">
+
+          <label><b>Last Name</b></label>
+          <input type="text" placeholder="Enter Last Name" id="lastNameService4">
+
+          <label><b>Contact Email</b></label>
+          <input type="email" placeholder="Enter Email" id="emailService4">
+
+          <label><b>Location Of Funeral</b></label>
+          <select id="funeralLocationService4" class="serviceDropdown">
+            <option>Bandung</option>
+            <option>Jakarta</option>
+            <option>Surabaya</option>
+            <option>Kalimantan</option>
+          </select>
+    
+          <label><b>Date Of Funeral</b></label>
+          <input type="date" id="funeralDateService4">
+
+          <label><b>Upload Gravestone Blueprint</b></label>
+          <input type="file" accept="image/*" id="gravestoneService4">
+
+          <label id="reminder4"><b>Please fill in all fields</b></label>
+          <label id="success4"><b>Request Successful!</b></label>
+
+          <button type="submit">Hire</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p>Serenity Farewell</p>
+  </footer>
+
+<script>
+  function scrollToMusic() {
+    document.getElementById('musicPart').scrollIntoView({
+      behavior: "auto",
+      block: "center",
+      inline: "center"
+    });
+  }
+  function scrollToMinister() {
+    document.getElementById('ministerPart').scrollIntoView({
+      behavior: "auto",
+      block: "center",
+      inline: "center"
+    });
+  }
+  function scrollToMortician() {
+    document.getElementById("morticianPart").scrollIntoView({
+      behavior: "auto",
+      block: "center",
+      inline: "center"
+    });
+  }
+  function scrollToGravestone() {
+    document.getElementById('gravestonePart').scrollIntoView({
+      behavior: "auto",
+      block: "center",
+      inline: "center"
+    });
+  }
+  function scrollToFuneral() {
+    document.getElementById('funeralPart').scrollIntoView({
+      behavior: "auto",
+      block: "center",
+      inline: "center"
+    });
+  }
+</script>
+
+<script>
+  // Get the pop-up
+  var popUpFuneralMusic = document.getElementById("pop-upFuneralMusic");
+  var popUpFuneralMinister = document.getElementById("pop-upFuneralMinister");
+  var popUpFuneralMortician = document.getElementById("pop-upFuneralMortician");
+  var popUpGravestone = document.getElementById("pop-upGravestone");
+  // When the user clicks anywhere outside of the pop-up, close it
+  window.onclick = function(event) {
+  if (event.target == popUpFuneralMusic) {
+      popUpFuneralMusic.style.display = "none";
+  } else if (event.target == popUpFuneralMinister) {
+      popUpFuneralMinister.style.display = "none";
+  } else if (event.target == popUpFuneralMortician) {
+      popUpFuneralMortician.style.display = "none";
+  } else if (event.target == popUpGravestone) {
+      popUpGravestone.style.display = "none"
+  }
+}
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let toggleButton = document.querySelector('.switch10 input');
+
+    toggleButton.addEventListener('click', function () {
+      let body = document.body;
+
+      if (body.classList.contains('dark')) {
+        body.classList.remove('dark');
+        body.classList.add('light');
+      } else {
+        body.classList.remove('light');
+        body.classList.add('dark');
+      }
+    });
+  });
+</script>
+
+<script>
+  document.getElementById("musicForms").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevents the form from submitting in the traditional way
+
+    var firstNameService1 = document.getElementById("firstNameService1").value;
+    var lastNameService1 = document.getElementById("lastNameService1").value;
+    var emailService1 = document.getElementById("emailService1").value;
+    var funeralLocationService1 = document.getElementById("funeralLocationService1").value;
+    var funeralDateService1 = document.getElementById("funeralDateService1").value;
+    var funeralMusicFileService1 = document.getElementById("funeralMusicFileService1").value;
+
+    if (firstNameService1 && lastNameService1 && emailService1 && funeralLocationService1 && funeralDateService1 && funeralMusicFileService1) {
+        // Retrieve existing user data or create an empty array
+        var existingUserData = JSON.parse(localStorage.getItem("userData")) || [];
+
+        // Ensure existingUserData is an array
+        if (!Array.isArray(existingUserData)) {
+            existingUserData = [];
+        }
+
+        var userData = {firstNameService1: firstNameService1, lastNameService1: lastNameService1, emailService1: emailService1, funeralLocationService1: funeralLocationService1, funeralDateService1: funeralDateService1, funeralMusicFileService1: funeralMusicFileService1};
+
+        // Add new user data to the array
+        existingUserData.push(userData);
+
+        // Save the updated array to localStorage
+        localStorage.setItem("userData", JSON.stringify(existingUserData));
+
+        document.getElementById("reminder1").style.display = "none";
+        document.getElementById("success1").style.display = "block";
+        
+        // Add the animation class and set a timeout to remove the element after the animation completes
+        var popUpFuneralMusic = document.getElementById("pop-upFuneralMusic");
+        popUpFuneralMusic.classList.add("animate-slide-up");
+        setTimeout(function() {
+          document.getElementById("musicForms").reset();
+          popUpFuneralMusic.style.display = "none";
+          popUpFuneralMusic.classList.remove("animate-slide-up"); // Reset the class for future use
+        }, 1500); // Adjust the timeout duration based on your animation duration
+
+    } else {
+        document.getElementById("reminder1").style.display = "block";
+    }
+});
+
+  document.getElementById("ministerForms").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevents the form from submitting in the traditional way
+    var firstNameService2 = document.getElementById("firstNameService2").value;
+    var lastNameService2 = document.getElementById("lastNameService2").value;
+    var emailService2 = document.getElementById("emailService2").value;
+    var funeralLocationService2 = document.getElementById("funeralLocationService2").value;
+    var funeralDateService2 = document.getElementById("funeralDateService2").value;
+    var deceasedNameService2 = document.getElementById("deceasedNameService2").value;
+
+    if (firstNameService2 && lastNameService2 && emailService2 && funeralLocationService2 && funeralDateService2 && deceasedNameService2) {
+        // Retrieve existing user data or create an empty array
+        var existingUserData = JSON.parse(localStorage.getItem("userData")) || [];
+
+        // Ensure existingUserData is an array
+        if (!Array.isArray(existingUserData)) {
+            existingUserData = [];
+        }
+
+        var userData = {firstNameService2: firstNameService2, lastNameService2: lastNameService2, emailService2: emailService2, funeralLocationService2: funeralLocationService2, funeralDateService2: funeralDateService2, deceasedNameService2: deceasedNameService2};
+
+        // Add new user data to the array
+        existingUserData.push(userData);
+
+        // Save the updated array to localStorage
+        localStorage.setItem("userData", JSON.stringify(existingUserData));
+
+        document.getElementById("reminder2").style.display = "none";
+        document.getElementById("success2").style.display = "block";
+        // Add the animation class and set a timeout to remove the element after the animation completes
+        var popUpFuneralMinister = document.getElementById("pop-upFuneralMinister");
+        popUpFuneralMinister.classList.add("animate-slide-up");
+        setTimeout(function() {
+          document.getElementById("ministerForms").reset();
+          popUpFuneralMinister.style.display = "none";
+          popUpFuneralMinister.classList.remove("animate-slide-up"); // Reset the class for future use
+        }, 1500); // Adjust the timeout duration based on your animation duration
+    } else {
+        document.getElementById("reminder2").style.display = "block";
+    }
+});
+
+  document.getElementById("morticianForms").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevents the form from submitting in the traditional way
+    var firstNameService3 = document.getElementById("firstNameService3").value;
+    var lastNameService3 = document.getElementById("lastNameService3").value;
+    var emailService3 = document.getElementById("emailService3").value;
+    var funeralLocationService3 = document.getElementById("funeralLocationService3").value;
+    var funeralDateService3 = document.getElementById("funeralDateService3").value;
+    var coffinSizeService3 = document.getElementById("coffinSizeService3").value;
+
+    if (firstNameService3 && lastNameService3 && emailService3 && funeralLocationService3 && funeralDateService3 && coffinSizeService3) {
+        // Retrieve existing user data or create an empty array
+        var existingUserData = JSON.parse(localStorage.getItem("userData")) || [];
+
+        // Ensure existingUserData is an array
+        if (!Array.isArray(existingUserData)) {
+            existingUserData = [];
+        }
+
+        var userData = {firstNameService3: firstNameService3, lastNameService3: lastNameService3, emailService3: emailService3, funeralLocationService3: funeralLocationService3, funeralDateService3: funeralDateService3, coffinSizeService3: coffinSizeService3};
+
+        // Add new user data to the array
+        existingUserData.push(userData);
+
+        // Save the updated array to localStorage
+        localStorage.setItem("userData", JSON.stringify(existingUserData));
+
+        document.getElementById("reminder3").style.display = "none";
+        document.getElementById("success3").style.display = "block";
+        // Add the animation class and set a timeout to remove the element after the animation completes
+        var popUpFuneralMortician = document.getElementById("pop-upFuneralMortician");
+        popUpFuneralMortician.classList.add("animate-slide-up");
+        setTimeout(function() {
+          document.getElementById("morticianForms").reset();
+          popUpFuneralMortician.style.display = "none";
+          popUpFuneralMortician.classList.remove("animate-slide-up"); // Reset the class for future use
+        }, 1500); // Adjust the timeout duration based on your animation duration
+    } else {
+        document.getElementById("reminder3").style.display = "block";
+    }
+});
+
+  document.getElementById("gravestoneForms").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevents the form from submitting in the traditional way
+    var firstNameService4 = document.getElementById("firstNameService4").value;
+    var lastNameService4 = document.getElementById("lastNameService4").value;
+    var emailService4 = document.getElementById("emailService4").value;
+    var funeralLocationService4 = document.getElementById("funeralLocationService4").value;
+    var funeralDateService4 = document.getElementById("funeralDateService4").value;
+    var gravestoneService4 = document.getElementById("gravestoneService4").value;
+
+    if (firstNameService4 && lastNameService4 && emailService4 && funeralLocationService4 && funeralDateService4 && gravestoneService4) {
+        // Retrieve existing user data or create an empty array
+        var existingUserData = JSON.parse(localStorage.getItem("userData")) || [];
+
+        // Ensure existingUserData is an array
+        if (!Array.isArray(existingUserData)) {
+            existingUserData = [];
+        }
+
+        var userData = {firstNameService4: firstNameService4, lastNameService4: lastNameService4, emailService4: emailService4, funeralLocationService4: funeralLocationService4, funeralDateService3: funeralDateService4, gravestoneService4: gravestoneService4};
+
+        // Add new user data to the array
+        existingUserData.push(userData);
+
+        // Save the updated array to localStorage
+        localStorage.setItem("userData", JSON.stringify(existingUserData));
+
+        document.getElementById("reminder4").style.display = "none";
+        document.getElementById("success4").style.display = "block";
+        // Add the animation class and set a timeout to remove the element after the animation completes
+        var popUpGravestone = document.getElementById("pop-upGravestone");
+        popUpGravestone.classList.add("animate-slide-up");
+        setTimeout(function() {
+          document.getElementById("gravestoneForms").reset();
+          popUpGravestone.style.display = "none";
+          popUpGravestone.classList.remove("animate-slide-up"); // Reset the class for future use
+        }, 1500); // Adjust the timeout duration based on your animation duration
+    } else {
+        document.getElementById("reminder4").style.display = "block";
+    }
+});
+
+
+</script>
+
+<script>
+  const serviceDropdown = document.getElementsByClassName("serviceDropdown");
+  serviceDropdown[0].selectedIndex = -1;
+  serviceDropdown[1].selectedIndex = -1;
+  serviceDropdown[2].selectedIndex = -1;
+  serviceDropdown[3].selectedIndex = -1;
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
