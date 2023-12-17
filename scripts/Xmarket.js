@@ -63,3 +63,12 @@ setInterval(function() {
   document.querySelector('.toast-time').innerHTML = `${seconds} seconds ago`;
 }, 1000);
 
+const toastCart = document.getElementById('toastButton')
+const toastSignReminder = document.getElementById('toastRemind')
+
+if (toastCart) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastCart.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}
