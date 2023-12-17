@@ -134,7 +134,7 @@ body{
 
 .planning-left{
     height: 100%;
-    width: 54%;
+    width: 60%;
     padding: 10px 30px;
     background-color: var(--firstcontainer-background);
     color: var(--firstcontainer-text);
@@ -143,7 +143,7 @@ body{
 
 .planning-right{
     height: 100%;
-    width: 46%;
+    width: 40%;
     background: url('AnImages/ImageTest.jpg'); 
     background-size: cover;
 }
@@ -251,7 +251,7 @@ h1{
     background-image: url('AnImages/Fadhillah_2702337211_HCIFP.jpg');
 }
 #chris{
-    background-image: url('AnImages/test.jpg');
+    background-image: url('AnImages/Chris.jpg');
 }
 
 .author-text{
@@ -356,7 +356,7 @@ h1{
         .pricing-card{
             width: 80%;
             margin: auto;
-            height: 900px;
+            height: 600px;
             overflow: hidden;
 
         }
@@ -374,6 +374,7 @@ h1{
         color: var(--meetourTime-line);
         background-color: var(--pricing-bg);
         border-bottom: 1.6px solid var(--black2);
+        border-top: 1.6px solid var(--black2);
     }
 
     .specificFont{
@@ -501,7 +502,7 @@ h1{
 
 .descriptionSection {
     background-color: black;
-    width: 40%;
+    width: 50%;
     
 }
 
