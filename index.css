@@ -144,8 +144,10 @@ body{
 .planning-right{
     height: 100%;
     width: 46%;
-    background: url('AnImages/ImageTest.jpg'); 
     background-size: cover;
+    background: url('AnImages/planning.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .text-right{
     height: 100%;
