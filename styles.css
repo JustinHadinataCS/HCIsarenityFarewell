@@ -9,6 +9,11 @@
     color: currentColor;
 }
 
+.content{
+    font-size: 20px;
+    text-align: center;
+}
+
 ::selection{
     color: black;
     background-color: orange
