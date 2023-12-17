@@ -502,16 +502,45 @@ h1{
 .descriptionSection {
     background-color: black;
     width: 40%;
+    
 }
 
 .descriptionSubheadingCard {
     text-align: center;
     font-size: 1.5vw;
+    animation: slideUp 0.3s linear   1 normal;
 }
 
 .descriptionSubheading {
     text-align: center;
     font-size: 2vw;
+    animation: slideUp 0.3s linear   1 normal;
+}
+
+.description {
+    margin: 3rem;
+    animation: slideUp 0.3s linear   1 normal;
+}
+
+.purchaseButton {
+    width: 30%;
+    margin-left: 35%;
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-radius: 10rem;
+    margin-top: 15vh;
+    border-color: white;
+    height: 10%;
+    animation: slideUp 0.3s linear 1 normal;
+    transition: transform .2s;
+}
+
+.purchaseButton:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-20px);
+
 }
 
 #premium2, #delux2 {

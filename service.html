@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
 </head>
 <body class="dark">
   <main>
@@ -67,7 +67,7 @@
                 <button class=" toggleButton">
                     Log in
                 </button>
-            <a href="serviceOrders.html">Orders</a>
+            <a href="serviceOrders.html" class="d-flex mx-5 toggleButton">Orders</a>
             </form>
             
           </div>
@@ -147,7 +147,7 @@
       <div class="services" id="musicPart">
         <div class="whiteArea right">
           <p class="subheadingServices">Funeral Music</p>
-          <p class="descriptionServices">Description</p>
+          <p class="descriptionServices">Serenity farewell provides variety of funeral music, all performed with professional musicians with much experience. We have the ability to convert music pieces to piano focused, orchestral and many more. </p>
         </div>
         <div>
           <button class="button leftButton" onclick="document.getElementById('pop-upFuneralMusic').style.display='block'"><b>Request Music</b></button>
@@ -159,7 +159,7 @@
       <div class="services" id="ministerPart">
         <div class="whiteArea left">
           <p class="subheadingServices">Funeral Ministers</p>
-          <p class="descriptionServices">Description</p>
+          <p class="descriptionServices">Having difficulty making the perfect eulogy to bid your loved ones farewell? Our ministers are top-notch when it comes to giving funeral speeches. With over a decade of experience and thousands of funerals attended as well as eulogies made, we will provide you a heartwarming experience of a speech.</p>
         </div>
         <button class="button rightButton" onclick="document.getElementById('pop-upFuneralMinister').style.display='block'"><b>Hire Minister</b></button>
       </div>
@@ -169,7 +169,7 @@
       <div class="services" id="morticianPart">
         <div class="whiteArea right">
           <p class="subheadingServices">Burial Preparations</p>
-          <p class="descriptionServices">Description</p>
+          <p class="descriptionServices">When you can not find a suitable coffin size for your deceased in your local area, we are here to solve your problem with our solution. Giving bereaved users the choice to select a coffin size that is suitable with accurate measurements.</p>
         </div>
         <button class="button leftButton" onclick="document.getElementById('pop-upFuneralMortician').style.display='block'"><b>Hire Mortician</b></button>
       </div>
@@ -179,7 +179,7 @@
       <div class="services" id="gravestonePart">
         <div class="whiteArea left">
           <p class="subheadingServices">Custom Gravestons</p>
-          <p class="descriptionServices">Description</p>
+          <p class="descriptionServices">Sometimes when we visit our loved ones who have passed away, the normal gravestone does not give much personality nor vibrance. Due to this we also provide the option for users to request a custom-build gravestone that will make their deathbed distinct and more decorative.</p>
         </div>
         <button class="button rightButton" onclick="document.getElementById('pop-upGravestone').style.display='block'"><b>Order Gravestone</b></button>
       </div>
@@ -190,7 +190,7 @@
       <div class="services" id="funeralPart">
         <div class="whiteArea right">
           <p class="subheadingServices">Complete Funerals</p>
-          <p class="descriptionServices">Description</p>
+          <p class="descriptionServices">Lastly, when necessary, you can check our pricings available that provide complete funerals as well as added bonuses. When you have zero experience on funerals, here is the most suitable place to start building your trust with us.</p>
         </div>
         <button class="button leftButton"><b>Select Package</b></button>
       </div>
@@ -214,7 +214,12 @@
           <input type="email" placeholder="Enter Email" id="emailService1">
     
           <label><b>Location Of Funeral</b></label>
-          <input type="text" placeholder="Enter Location" id="funeralLocationService1">
+          <select id="funeralLocationService1" class="serviceDropdown">
+            <option>Bandung</option>
+            <option>Jakarta</option>
+            <option>Surabaya</option>
+            <option>Kalimantan</option>
+          </select>
     
           <label><b>Date Of Funeral</b></label>
           <input type="date" id="funeralDateService1">
@@ -222,7 +227,8 @@
           <label><b>Upload Music</b></label>
           <input type="file" id="funeralMusicFileService1" accept=".mp3,audio/*">
     
-          <label><b>Method Of Payment</b></label>
+          <label id="reminder1"><b>Please fill in all fields</b></label>
+          <label id="success1"><b>Request Successful!</b></label>
     
           <button type="submit">Hire</button>
         </div>
@@ -246,7 +252,12 @@
           <input type="email" placeholder="Enter Email" id="emailService2">
 
           <label><b>Location Of Funeral</b></label>
-          <input type="text" placeholder="Enter Location" id="funeralLocationService2">
+          <select id="funeralLocationService2" class="serviceDropdown">
+            <option>Bandung</option>
+            <option>Jakarta</option>
+            <option>Surabaya</option>
+            <option>Kalimantan</option>
+          </select>
     
           <label><b>Date Of Funeral</b></label>
           <input type="date" id="funeralDateService2">
@@ -254,7 +265,8 @@
           <label><b>Name of Deceased</b></label>
           <input type="text" placeholder="Enter Name" id="deceasedNameService2">
     
-          <label><b>Method Of Payment</b></label>
+          <label id="reminder2"><b>Please fill in all fields</b></label>
+          <label id="success2"><b>Request Successful!</b></label>
     
           <button type="submit">Hire</button>
         </div>
@@ -278,7 +290,12 @@
           <input type="email" placeholder="Enter Email" id="emailService3">
     
           <label><b>Location Of Funeral</b></label>
-          <input type="text" placeholder="Enter Location" id="funeralLocationService3">
+          <select id="funeralLocationService3" class="serviceDropdown">
+            <option>Bandung</option>
+            <option>Jakarta</option>
+            <option>Surabaya</option>
+            <option>Kalimantan</option>
+          </select>
     
           <label><b>Date Of Funeral</b></label>
           <input type="date" id="funeralDateService3">
@@ -286,7 +303,8 @@
           <label><b>Choose Coffin Size</b></label>
           <input type="text" id="coffinSizeService3">
     
-          <label><b>Method Of Payment</b></label>
+          <label id="reminder3"><b>Please fill in all fields</b></label>
+          <label id="success3"><b>Request Successful!</b></label>
     
           <button type="submit">Hire</button>
         </div>
@@ -310,7 +328,12 @@
           <input type="email" placeholder="Enter Email" id="emailService4">
 
           <label><b>Location Of Funeral</b></label>
-          <input type="text" placeholder="Enter Location" id="funeralLocationService4">
+          <select id="funeralLocationService4" class="serviceDropdown">
+            <option>Bandung</option>
+            <option>Jakarta</option>
+            <option>Surabaya</option>
+            <option>Kalimantan</option>
+          </select>
     
           <label><b>Date Of Funeral</b></label>
           <input type="date" id="funeralDateService4">
@@ -318,7 +341,8 @@
           <label><b>Upload Gravestone Blueprint</b></label>
           <input type="file" accept="image/*" id="gravestoneService4">
 
-          <label><b>Method Of Payment</b></label>
+          <label id="reminder4"><b>Please fill in all fields</b></label>
+          <label id="success4"><b>Request Successful!</b></label>
 
           <button type="submit">Hire</button>
         </div>
@@ -433,7 +457,8 @@
         // Save the updated array to localStorage
         localStorage.setItem("userData", JSON.stringify(existingUserData));
 
-        alert('Form submitted successfully!');
+        document.getElementById("reminder1").style.display = "none";
+        document.getElementById("success1").style.display = "block";
         
         // Add the animation class and set a timeout to remove the element after the animation completes
         var popUpFuneralMusic = document.getElementById("pop-upFuneralMusic");
@@ -442,10 +467,10 @@
           document.getElementById("musicForms").reset();
           popUpFuneralMusic.style.display = "none";
           popUpFuneralMusic.classList.remove("animate-slide-up"); // Reset the class for future use
-        }, 1000); // Adjust the timeout duration based on your animation duration
+        }, 1500); // Adjust the timeout duration based on your animation duration
 
     } else {
-        confirm('Please fill in all fields.');
+        document.getElementById("reminder1").style.display = "block";
     }
 });
 
@@ -475,7 +500,8 @@
         // Save the updated array to localStorage
         localStorage.setItem("userData", JSON.stringify(existingUserData));
 
-        alert('Form submitted successfully!');
+        document.getElementById("reminder2").style.display = "none";
+        document.getElementById("success2").style.display = "block";
         // Add the animation class and set a timeout to remove the element after the animation completes
         var popUpFuneralMinister = document.getElementById("pop-upFuneralMinister");
         popUpFuneralMinister.classList.add("animate-slide-up");
@@ -483,9 +509,9 @@
           document.getElementById("ministerForms").reset();
           popUpFuneralMinister.style.display = "none";
           popUpFuneralMinister.classList.remove("animate-slide-up"); // Reset the class for future use
-        }, 1000); // Adjust the timeout duration based on your animation duration
+        }, 1500); // Adjust the timeout duration based on your animation duration
     } else {
-        alert('Please fill in all fields.');
+        document.getElementById("reminder2").style.display = "block";
     }
 });
 
@@ -515,7 +541,8 @@
         // Save the updated array to localStorage
         localStorage.setItem("userData", JSON.stringify(existingUserData));
 
-        alert('Form submitted successfully!');
+        document.getElementById("reminder3").style.display = "none";
+        document.getElementById("success3").style.display = "block";
         // Add the animation class and set a timeout to remove the element after the animation completes
         var popUpFuneralMortician = document.getElementById("pop-upFuneralMortician");
         popUpFuneralMortician.classList.add("animate-slide-up");
@@ -523,9 +550,9 @@
           document.getElementById("morticianForms").reset();
           popUpFuneralMortician.style.display = "none";
           popUpFuneralMortician.classList.remove("animate-slide-up"); // Reset the class for future use
-        }, 1000); // Adjust the timeout duration based on your animation duration
+        }, 1500); // Adjust the timeout duration based on your animation duration
     } else {
-        alert('Please fill in all fields.');
+        document.getElementById("reminder3").style.display = "block";
     }
 });
 
@@ -555,7 +582,8 @@
         // Save the updated array to localStorage
         localStorage.setItem("userData", JSON.stringify(existingUserData));
 
-        alert('Form submitted successfully!');
+        document.getElementById("reminder4").style.display = "none";
+        document.getElementById("success4").style.display = "block";
         // Add the animation class and set a timeout to remove the element after the animation completes
         var popUpGravestone = document.getElementById("pop-upGravestone");
         popUpGravestone.classList.add("animate-slide-up");
@@ -563,13 +591,21 @@
           document.getElementById("gravestoneForms").reset();
           popUpGravestone.style.display = "none";
           popUpGravestone.classList.remove("animate-slide-up"); // Reset the class for future use
-        }, 1000); // Adjust the timeout duration based on your animation duration
+        }, 1500); // Adjust the timeout duration based on your animation duration
     } else {
-        alert('Please fill in all fields.');
+        document.getElementById("reminder4").style.display = "block";
     }
 });
 
 
+</script>
+
+<script>
+  const serviceDropdown = document.getElementsByClassName("serviceDropdown");
+  serviceDropdown[0].selectedIndex = -1;
+  serviceDropdown[1].selectedIndex = -1;
+  serviceDropdown[2].selectedIndex = -1;
+  serviceDropdown[3].selectedIndex = -1;
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

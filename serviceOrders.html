@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Data</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Serenity Farewell</title>
 </head>
 <body>
-    <a href="service.html">go back</a>
+    <a href="service.html" id="return"><i class="fa-solid fa-arrow-right"></i></a>
     <link rel="stylesheet" href="serviceOrders.css">
     <h1>Orders</h1>
     <div class="ordersList" id="userDataList"></div>
@@ -43,7 +44,7 @@
             if (user.hasOwnProperty("firstNameService1")) {
                 // Music data
                 heading = document.createElement("h2");
-                heading.textContent = "Request Music";
+                heading.textContent = "Request Music | Status: Pending";
                 data1 = document.createElement("p");
                 data1.textContent = "First Name: " + user.firstNameService1;
                 data2 = document.createElement("p");
@@ -56,10 +57,12 @@
                 data5.textContent = "Date: " + user.funeralDateService1;
                 data6 = document.createElement("p");
                 data6.textContent = "Music File: " + user.funeralMusicFileService1;
+
+                listItem.className = "serviceData funeralMusic";
             } else if (user.hasOwnProperty("firstNameService2")) {
                 // Minister data
                 heading = document.createElement("h2");
-                heading.textContent = "Hire Minister";
+                heading.textContent = "Hire Minister | Status: Pending";
                 data1 = document.createElement("p");
                 data1.textContent = "First Name: " + user.firstNameService2;
                 data2 = document.createElement("p");
@@ -72,9 +75,11 @@
                 data5.textContent = "Date: " + user.funeralDateService2;
                 data6 = document.createElement("p");
                 data6.textContent = "Name of Deceased: " + user.deceasedNameService2;
+
+                listItem.className = "serviceData funeralMinister";
             } else if (user.hasOwnProperty("firstNameService3")) {
                 heading = document.createElement("h2");
-                heading.textContent = "Hire Minister";
+                heading.textContent = "Hire Mortician | Status: Pending";
                 data1 = document.createElement("p");
                 data1.textContent = "First Name: " + user.firstNameService3;
                 data2 = document.createElement("p");
@@ -87,9 +92,11 @@
                 data5.textContent = "Date: " + user.funeralDateService3;
                 data6 = document.createElement("p");
                 data6.textContent = "Size of Coffin: " + user.coffinSizeService3;
+
+                listItem.className = "serviceData funeralMortician";
             } else if (user.hasOwnProperty("firstNameService4")) {
                 heading = document.createElement("h2");
-                heading.textContent = "Hire Minister";
+                heading.textContent = "Order Gravestone | Status: Pending";
                 data1 = document.createElement("p");
                 data1.textContent = "First Name: " + user.firstNameService4;
                 data2 = document.createElement("p");
@@ -102,6 +109,8 @@
                 data5.textContent = "Date: " + user.funeralDateService4;
                 data6 = document.createElement("p");
                 data6.textContent = "Gravestone Blueprint: " + user.gravestoneService4;
+
+                listItem.className = "serviceData funeralGravestone";
             }
 
             // Add a remove button for each entry
