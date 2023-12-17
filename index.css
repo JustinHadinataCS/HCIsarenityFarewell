@@ -245,10 +245,10 @@ h1{
 }
 
 #justin{
-    background-image: url('AnImages/test.jpg');
+    background-image: url('AnImages/Profile.jpg');
 }
-#fadillah{
-    background-image: url('AnImages/test.jpg');
+#fadhillah{
+    background-image: url('AnImages/Fadhillah_2702337211_HCIFP.jpg');
 }
 #chris{
     background-image: url('AnImages/test.jpg');
@@ -665,4 +665,10 @@ h1{
 
 .navbar ul li:hover:after{
     width: 100%;
+}
+
+
+.pricingForMobile {
+    margin-top: 10vw;
+    font-size: 3vw;
 }
