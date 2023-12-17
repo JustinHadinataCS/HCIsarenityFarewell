@@ -114,3 +114,7 @@ paragraph::selection{
 .CallMeAnAnimation{
     animation: slideUp 0.3s linear   1 normal;
 }
+
+footer {
+    height: 30vh;
+}

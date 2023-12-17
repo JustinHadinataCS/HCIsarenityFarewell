@@ -23,13 +23,6 @@ body {
     margin-top: 10vh;
 }
 
-.title {
-    font-size: 2vw;
-}
-
-.sub-title {
-    font-size: 1vw;
-}
 
 /*Set space between heading and subheading*/
 #subheading {
@@ -341,6 +334,12 @@ button[type=submit]:hover {
     }
     label {
         font-size: 10px;
+    }
+    .title {
+        font-size: 2vw;
+    }
+    .sub-title {
+        font-size: 1vw;
     }
 }
 
