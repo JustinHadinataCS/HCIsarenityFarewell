@@ -295,10 +295,8 @@ button[type=submit]:hover {
     }
 
 
-@media only screen and (max-width: 600px) {
-    .circleSection, .circleRow2 {
-        display: none;
-    }
+@media only screen and (max-width: 900px) {
+
     .left, .right {
         margin: 0;
         width: 60%;
