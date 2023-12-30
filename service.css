@@ -185,7 +185,7 @@ body {
     padding-left: 2vw;
     padding-right: 2vw;
     padding-top: 2vw;
-    font-size: 1.02vw;
+    font-size: 1.22vw;
     color: var(--text);
 }
 
@@ -332,12 +332,6 @@ button[type=submit]:hover {
     }
     label {
         font-size: 10px;
-    }
-    .title {
-        font-size: 2vw;
-    }
-    .sub-title {
-        font-size: 1vw;
     }
 }
 
