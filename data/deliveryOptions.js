@@ -5,11 +5,11 @@ export const deliveryOptions = [{
 }, {
   id: '2',
   deliveryDays: 2,
-  priceCents: 300
+  priceCents: 300000
 }, {
   id: '3',
   deliveryDays: 0,
-  priceCents: 500
+  priceCents: 500000
 }];
 
 export function getDeliveryOption(deliveryOptionId) {

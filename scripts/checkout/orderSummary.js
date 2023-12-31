@@ -43,7 +43,7 @@ export function renderOrderSummary() {
               ${matchingProduct.name}
             </div>
             <div class="product-price">
-              $${formatCurrency(matchingProduct.priceCents)}
+              Rp${formatCurrency(matchingProduct.priceCents)}
             </div>
             <div class="product-quantity">
               <span>
@@ -81,7 +81,7 @@ export function renderOrderSummary() {
 
       const priceString = deliveryOption.priceCents === 0
         ? 'FREE'
-        : `$${formatCurrency(deliveryOption.priceCents)} -`;
+        : `Rp${formatCurrency(deliveryOption.priceCents)} -`;
 
       const isChecked = deliveryOption.id === cartItem.deliveryOptionId;
 
